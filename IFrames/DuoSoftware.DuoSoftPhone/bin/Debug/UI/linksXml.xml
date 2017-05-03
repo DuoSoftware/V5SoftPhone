@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Favorites>
+  <Single name="MSN.com" url="http://www.msn.com" />
+  <Group name="C/N">
+    <Entry name="[adult swim]" url="http://www.adultswim.com" />
+    <Entry name="Cartoon Network" url="http://www.cartoonnetwork.com" />
+  </Group>
+</Favorites>

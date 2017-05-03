@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UiAccessService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9998/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9998/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9998/?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUiAccessService_SendDataToAgent_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendDataToAgent" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_SendDataToAgent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendDataToAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_InvokeCommandByAgent_InputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeCommandByAgent" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_InvokeCommandByAgent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeCommandByAgentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_InvokeCommandByUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeCommandByUser" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_InvokeCommandByUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeCommandByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_InvokeCommandByGuUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeCommandByGuUserId" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_InvokeCommandByGuUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeCommandByGuUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_InvokeCommandBySecurityToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeCommandBySecurityToken" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_InvokeCommandBySecurityToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeCommandBySecurityTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_InvokeClientCommandFromBackend_InputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeClientCommandFromBackend" />
+  </wsdl:message>
+  <wsdl:message name="IUiAccessService_InvokeClientCommandFromBackend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeClientCommandFromBackendResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUiAccessService">
+    <wsdl:operation name="SendDataToAgent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUiAccessService/SendDataToAgent" message="tns:IUiAccessService_SendDataToAgent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUiAccessService/SendDataToAgentResponse" message="tns:IUiAccessService_SendDataToAgent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InvokeCommandByAgent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUiAccessService/InvokeCommandByAgent" message="tns:IUiAccessService_InvokeCommandByAgent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUiAccessService/InvokeCommandByAgentResponse" message="tns:IUiAccessService_InvokeCommandByAgent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InvokeCommandByUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUiAccessService/InvokeCommandByUser" message="tns:IUiAccessService_InvokeCommandByUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUiAccessService/InvokeCommandByUserResponse" message="tns:IUiAccessService_InvokeCommandByUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InvokeCommandByGuUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUiAccessService/InvokeCommandByGuUserId" message="tns:IUiAccessService_InvokeCommandByGuUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUiAccessService/InvokeCommandByGuUserIdResponse" message="tns:IUiAccessService_InvokeCommandByGuUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InvokeCommandBySecurityToken">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUiAccessService/InvokeCommandBySecurityToken" message="tns:IUiAccessService_InvokeCommandBySecurityToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUiAccessService/InvokeCommandBySecurityTokenResponse" message="tns:IUiAccessService_InvokeCommandBySecurityToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InvokeClientCommandFromBackend">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUiAccessService/InvokeClientCommandFromBackend" message="tns:IUiAccessService_InvokeClientCommandFromBackend_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUiAccessService/InvokeClientCommandFromBackendResponse" message="tns:IUiAccessService_InvokeClientCommandFromBackend_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUiAccessService" type="tns:IUiAccessService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendDataToAgent">
+      <soap:operation soapAction="http://tempuri.org/IUiAccessService/SendDataToAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeCommandByAgent">
+      <soap:operation soapAction="http://tempuri.org/IUiAccessService/InvokeCommandByAgent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeCommandByUser">
+      <soap:operation soapAction="http://tempuri.org/IUiAccessService/InvokeCommandByUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeCommandByGuUserId">
+      <soap:operation soapAction="http://tempuri.org/IUiAccessService/InvokeCommandByGuUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeCommandBySecurityToken">
+      <soap:operation soapAction="http://tempuri.org/IUiAccessService/InvokeCommandBySecurityToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeClientCommandFromBackend">
+      <soap:operation soapAction="http://tempuri.org/IUiAccessService/InvokeClientCommandFromBackend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UiAccessService">
+    <wsdl:port name="BasicHttpBinding_IUiAccessService" binding="tns:BasicHttpBinding_IUiAccessService">
+      <soap:address location="http://localhost:9998/UiAccessService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

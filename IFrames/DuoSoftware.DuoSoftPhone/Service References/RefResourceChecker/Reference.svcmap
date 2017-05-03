@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8a03cd2d-a579-422d-ae7a-0fef51c8f8ca" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.2.35/duosltv5/ContactV5Services/ResourceMonitoring/Implementation/ResourceStatusChecker.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ResourceStatusChecker1.wsdl" MetadataType="Wsdl" ID="6dcd660f-9363-4c0e-8ad9-e7fafb03189b" SourceId="1" SourceUrl="http://192.168.2.35/DUOSLTV5/ContactV5Services/ResourceMonitoring/Implementation/ResourceStatusChecker.svc?wsdl" />
+    <MetadataFile FileName="ResourceStatusChecker4.xsd" MetadataType="Schema" ID="402c2d48-a1e4-4980-8a26-4bffa6ac37f6" SourceId="1" SourceUrl="http://192.168.2.35/DUOSLTV5/ContactV5Services/ResourceMonitoring/Implementation/ResourceStatusChecker.svc?xsd=xsd1" />
+    <MetadataFile FileName="ResourceStatusChecker41.xsd" MetadataType="Schema" ID="b023347b-65f0-4054-955f-d50458fca920" SourceId="1" SourceUrl="http://192.168.2.35/DUOSLTV5/ContactV5Services/ResourceMonitoring/Implementation/ResourceStatusChecker.svc?xsd=xsd3" />
+    <MetadataFile FileName="ResourceStatusChecker42.xsd" MetadataType="Schema" ID="b9b727f2-09a5-46da-a528-f708cc59871b" SourceId="1" SourceUrl="http://192.168.2.35/DUOSLTV5/ContactV5Services/ResourceMonitoring/Implementation/ResourceStatusChecker.svc?xsd=xsd2" />
+    <MetadataFile FileName="ResourceStatusChecker43.xsd" MetadataType="Schema" ID="72644e64-b3b6-4ce2-a4a3-1df77cd66e97" SourceId="1" SourceUrl="http://192.168.2.35/DUOSLTV5/ContactV5Services/ResourceMonitoring/Implementation/ResourceStatusChecker.svc?xsd=xsd0" />
+    <MetadataFile FileName="ResourceStatusChecker1.disco" MetadataType="Disco" ID="800fd6d6-b699-4e22-9c04-5463b3246093" SourceId="1" SourceUrl="http://192.168.2.35/DUOSLTV5/ContactV5Services/ResourceMonitoring/Implementation/ResourceStatusChecker.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

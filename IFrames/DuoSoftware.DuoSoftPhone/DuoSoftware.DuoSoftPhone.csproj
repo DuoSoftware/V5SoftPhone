@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C69044AB-DF17-453B-B71F-F7974BDD22A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DuoSoftware.DuoSoftPhone</RootNamespace>
+    <AssemblyName>DuoSoftware.DuoSoftPhone</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Console App.fw.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DuoSoftware.DuoSoftPhone.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>885C01C8481293DA8B1A3861EE08110F9D134728</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DuoDialer_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Alchemy">
+      <HintPath>C:\CommonDLL\Assemblies\Alchemy.dll</HintPath>
+    </Reference>
+    <Reference Include="DuoDeviceMonitor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\CommonDLL\Assemblies\SoftPhone\DuoDeviceMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="DuoSoftware.DuoTools.DuoLogger, Version=1.0.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\CommonDLL\Assemblies\SoftPhone\DuoSoftware.DuoTools.DuoLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Infragistics2.Shared.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Infragistics2.Win.Misc.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Infragistics2.Win.UltraWinEditors.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Infragistics2.Win.UltraWinExplorerBar.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Infragistics2.Win.UltraWinStatusBar.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Infragistics2.Win.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="interop.speechlib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=14a89f21efe9c134">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\interop.speechlib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\CommonDLL\Assemblies\SoftPhone\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\CommonDLL\Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.PollingDuplex">
+      <HintPath>C:\CommonDLL\Assemblies\SoftPhone\System.ServiceModel.PollingDuplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XDMessaging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=737bc70442f2c4af, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\CommonDLL\Assemblies\SoftPhone\XDMessaging.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AgentStatus\Agent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\AgentStatus\AgentACW.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\AgentStatus\AgentBreak.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\AgentStatus\AgentBusy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\AgentStatus\AgentIdle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\AgentStatus\AgentInitiate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\AgentStatus\AgentOffline.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\AgentStatus\AgentState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\Call.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallAgentClintConnectedState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallAgentSupConnectedState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallConferenceState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallConnectedState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallDisconnectedState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallHoldState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallIdleState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallIncommingState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallRingingState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\CallStatus\CallTryingState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Common\ComMethods.cs" />
+    <Compile Include="Controllers\Common\EnumCollector.cs" />
+    <Compile Include="Controllers\InterfaceClass.cs" />
+    <Compile Include="Controllers\ScrollingMarqueeLabelDrawFilter.cs" />
+    <Compile Include="Controllers\SequenceNumberGenerator.cs" />
+    <Compile Include="Controllers\Service\ArdsHandler.cs" />
+    <Compile Include="Controllers\Service\CallHandler.cs" />
+    <Compile Include="Controllers\Service\CommonDataHandler.cs" />
+    <Compile Include="Controllers\Service\EngagementHandler.cs" />
+    <Compile Include="Controllers\Service\FrameworkHandler.cs" />
+    <Compile Include="Controllers\Service\IResourceHandler.cs" />
+    <Compile Include="Controllers\Service\MainConfigHandler.cs" />
+    <Compile Include="Controllers\Service\ProfileManagementHandler.cs" />
+    <Compile Include="Controllers\Service\ResourceHandler.cs" />
+    <Compile Include="Controllers\Service\ResourceCheckerHandler.cs" />
+    <Compile Include="Controllers\Service\ResourceMonitoringHandler.cs" />
+    <Compile Include="Controllers\SessionId.cs" />
+    <Compile Include="Controllers\AsynchronousSocketListener.cs" />
+    <Compile Include="Controllers\WebSocketServiceHost.cs" />
+    <Compile Include="Listners\UdpClient.cs" />
+    <Compile Include="PortSIP\PortSIPLib.cs" />
+    <Compile Include="PortSIP\PortSIPNativeMethods.cs" />
+    <Compile Include="PortSIP\PortSIPTypes.cs" />
+    <Compile Include="PortSIP\PortSIP_Errors.cs" />
+    <Compile Include="PortSIP\Session.cs" />
+    <Compile Include="PortSIP\SIPCallbackEvents.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RefCcDispatch\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RefCommonData\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RefDuoMainConfigService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RefEngagement\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RefFramework\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RefProfileManagement\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RefResourceChecker\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RefResourceMonitoring\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RefResourceProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RefUserAuth\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddFavorite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddFavorite.Designer.cs">
+      <DependentUpon>AddFavorite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AudioWiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AudioWiz.Designer.cs">
+      <DependentUpon>AudioWiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BrowserPreview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\CallLogItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CallLogItem.Designer.cs">
+      <DependentUpon>CallLogItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmCallLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmCallLogs.Designer.cs">
+      <DependentUpon>FrmCallLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmIncomingCall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmIncomingCall.Designer.cs">
+      <DependentUpon>FrmIncomingCall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormDialPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormDialPad.Designer.cs">
+      <DependentUpon>FormDialPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPhoneConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPhoneConfig.Designer.cs">
+      <DependentUpon>frmPhoneConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LogOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LogOn.Designer.cs">
+      <DependentUpon>LogOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MyTab.cs" />
+    <Compile Include="UI\ScrollingTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ScrollingTextControl.Designer.cs">
+      <DependentUpon>ScrollingTextControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddFavorite.resx">
+      <DependentUpon>AddFavorite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AudioWiz.resx">
+      <DependentUpon>AudioWiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CallLogItem.resx">
+      <DependentUpon>CallLogItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmCallLogs.resx">
+      <DependentUpon>FrmCallLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmIncomingCall.resx">
+      <DependentUpon>FrmIncomingCall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormDialPad.resx">
+      <DependentUpon>FormDialPad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPhoneConfig.resx">
+      <DependentUpon>frmPhoneConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LogOn.resx">
+      <DependentUpon>LogOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ScrollingTextControl.resx">
+      <DependentUpon>ScrollingTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DuoDialer_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\System.Xml.Linq.XElement.datasource" />
+    <None Include="Properties\DataSources\System.Xml.XmlElement.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\RefCcDispatch\CCDispatcher.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefCcDispatch\CCDispatcher1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefCcDispatch\CCDispatcher2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefCcDispatch\CCDispatcher3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefCcDispatch\CCDispatchService.wsdl" />
+    <None Include="Service References\RefCcDispatch\DuoSoftware.DuoSoftPhone.RefCcDispatch.ConfUserValidationResult1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefCommonData\CommonData.wsdl" />
+    <None Include="Service References\RefCommonData\CommonData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefCommonData\CommonData1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefCommonData\CommonData2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefCommonData\CommonData3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefCommonData\CommonData4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefCommonData\DuoSoftware.DuoSoftPhone.RefCommonData.CommonDataRecord1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefCommonData\DuoSoftware.DuoSoftPhone.RefCommonData.DataSetData1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoConfigServerDataContracts.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.AutoGeneratedAccDetails1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.CallControllerConf1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.CallForwardingInfo1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.CallRouteInfo1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.CallRuleInfoInbound1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.CallRuleInfoOutbound1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.CallServerAccount1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.CallServerList1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.CallServerLoginData1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.CallServerMainConfigurations1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.CallServerTypes1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.Channels1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.ConcurrentVoicePortLimits1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.ConferenceInfo1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.ConferenceUser1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.Devices1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.Network1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.SaveResult1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.ServerInfoForTrunk1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.SIPAccDetails1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.Translationinfo1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.TrunkDetails1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.TrunkPhoneNumbers1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.UserGroup1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.UsrExtensions1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\DuoSoftware.DuoSoftPhone.RefDuoMainConfigService.Zones1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\service.wsdl" />
+    <None Include="Service References\RefDuoMainConfigService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefDuoMainConfigService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefEngagement\DuoEngagementService1.wsdl" />
+    <None Include="Service References\RefEngagement\DuoSoftware.DuoSoftPhone.RefEngagement.DuoEngagements1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefEngagement\EngagementService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefEngagement\EngagementService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefEngagement\EngagementService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefEngagement\EngagementService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefFramework\item5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefFramework\item51.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefFramework\item52.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefFramework\UiAccessService.wsdl" />
+    <None Include="Service References\RefProfileManagement\DuoSoftware.DuoSoftPhone.RefProfileManagement.Application1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefProfileManagement\DuoSoftware.DuoSoftPhone.RefProfileManagement.Category1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefProfileManagement\DuoSoftware.DuoSoftPhone.RefProfileManagement.Personalization1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefProfileManagement\ProfileManagementService1.wsdl" />
+    <None Include="Service References\RefProfileManagement\ProfileManagementService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefProfileManagement\ProfileManagementService61.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefProfileManagement\ProfileManagementService62.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefProfileManagement\ProfileManagementService63.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefProfileManagement\ProfileManagementService64.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefProfileManagement\ProfileManagementService65.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceChecker\DuoSoftware.DuoSoftPhone.RefResourceChecker.StatusReplyInfo1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefResourceChecker\ResourceStatusChecker1.wsdl" />
+    <None Include="Service References\RefResourceChecker\ResourceStatusChecker4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceChecker\ResourceStatusChecker41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceChecker\ResourceStatusChecker42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceChecker\ResourceStatusChecker43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceMonitoring\DuoSoftware.DuoSoftPhone.RefResourceMonitoring.OnLineAgent1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefResourceMonitoring\ResourceMonitoring.wsdl" />
+    <None Include="Service References\RefResourceMonitoring\ResourceMonitoring.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceMonitoring\ResourceMonitoring1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceMonitoring\ResourceMonitoring2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceMonitoring\ResourceMonitoring3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceProxy\DuoSoftware.DuoSoftPhone.RefResourceProxy.ResourceProxyReplyDataResourceProxyReply1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefResourceProxy\ResourceProxy4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceProxy\ResourceProxy41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceProxy\ResourceProxy42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceProxy\ResourceProxy43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefResourceProxy\ResourceProxyService.wsdl" />
+    <None Include="Service References\RefUserAuth\auth.wsdl" />
+    <None Include="Service References\RefUserAuth\auth.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefUserAuth\auth1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefUserAuth\auth2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefUserAuth\auth3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RefUserAuth\auth4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Duo Logo_Small.fw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Duo Logo_Small.fw1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\duo.bmp" />
+    <None Include="Service References\RefDuoMainConfigService\configuration91.svcinfo" />
+    <None Include="Service References\RefDuoMainConfigService\configuration.svcinfo" />
+    <None Include="Service References\RefDuoMainConfigService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="bin\Debug\portsip_sdk.dll" />
+    <Content Include="UI\linksXml.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UI\favs.xml" />
+    <None Include="bin\Debug\duo logo 20X20 pix.png" />
+    <None Include="bin\Debug\Agentconsole_Duoapp.png" />
+    <None Include="bin\Debug\call.png" />
+    <Content Include="bin\Debug\Log250X50pix.png" />
+    <Content Include="bin\Debug\RingIntone.wav" />
+    <Content Include="bin\Debug\Ringtone.wav" />
+    <None Include="bin\Debug\status.png" />
+    <Content Include="Console App.fw.ico" />
+    <None Include="Service References\RefEngagement\configuration91.svcinfo" />
+    <None Include="Service References\RefEngagement\configuration.svcinfo" />
+    <None Include="Service References\RefEngagement\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RefProfileManagement\configuration91.svcinfo" />
+    <None Include="Service References\RefProfileManagement\configuration.svcinfo" />
+    <None Include="Service References\RefProfileManagement\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\windows_close_program.png" />
+    <None Include="Resources\close_button_red_1412058367_123_231_20_248.png" />
+    <None Include="Resources\mute_mic.png" />
+    <None Include="Resources\mute_mic28.png" />
+    <None Include="Resources\mute_sound28.png" />
+    <None Include="Resources\offline.gif" />
+    <None Include="Resources\online.gif" />
+    <None Include="Service References\RefCommonData\CommonData.disco" />
+    <None Include="Service References\RefCommonData\configuration91.svcinfo" />
+    <None Include="Service References\RefCommonData\configuration.svcinfo" />
+    <None Include="Service References\RefCommonData\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RefEngagement\EngagementService.disco" />
+    <None Include="Service References\RefResourceChecker\configuration91.svcinfo" />
+    <None Include="Service References\RefResourceChecker\configuration.svcinfo" />
+    <None Include="Service References\RefResourceChecker\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RefCcDispatch\CCDispatcher.disco" />
+    <None Include="Service References\RefCcDispatch\configuration91.svcinfo" />
+    <None Include="Service References\RefCcDispatch\configuration.svcinfo" />
+    <None Include="Service References\RefCcDispatch\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Dial.ico" />
+    <None Include="Resources\AnswerCall.ico" />
+    <None Include="Resources\MakeCall.ico" />
+    <None Include="Resources\IdleTime.ico" />
+    <None Include="Resources\OnCallTime.ico" />
+    <None Include="Resources\BreakTime.ico" />
+    <None Include="Resources\acwTime.ico" />
+    <None Include="Resources\HoldTime.ico" />
+    <None Include="Resources\TransferCall.ico" />
+    <None Include="Resources\ConfCall.ico" />
+    <None Include="Resources\Language.ico" />
+    <None Include="Resources\IVRpath.ico" />
+    <None Include="Resources\phone-54-128.ico" />
+    <None Include="Resources\phone-54-64.ico" />
+    <None Include="Resources\phone-62-32 %281%29.ico" />
+    <None Include="Resources\phone-54-48.ico" />
+    <None Include="Resources\phone-54-48.gif" />
+    <None Include="Resources\AnswerM.ico" />
+    <None Include="Resources\EndCallM.ico" />
+    <None Include="Resources\muteSpek.ico" />
+    <None Include="Resources\Mutemicrophone.ico" />
+    <None Include="Resources\incoming17.png" />
+    <None Include="Resources\incoming171.png" />
+    <None Include="Resources\incoming3.png" />
+    <None Include="Resources\favicon.ico" />
+    <None Include="Resources\MissCallCallLog.ico" />
+    <None Include="Resources\callLogincomming.ico" />
+    <None Include="Resources\calloutgoing.ico" />
+    <None Include="Resources\callLogincomming1.ico" />
+    <None Include="Resources\calloutgoing1.ico" />
+    <None Include="Resources\MissCallCallLog1.ico" />
+    <None Include="Resources\CloseLog.ico" />
+    <None Include="Resources\info.ico" />
+    <None Include="Resources\1416580494_32457.ico" />
+    <None Include="Resources\IncommingCallLog.ico" />
+    <None Include="Resources\MakeCallLog.ico" />
+    <None Include="Resources\PhonBottom.png" />
+    <None Include="Resources\magraphics.png" />
+    <None Include="Resources\cell.png" />
+    <None Include="Resources\DuoLogin.png" />
+    <None Include="Service References\RefProfileManagement\ProfileManagementService1.disco" />
+    <None Include="Service References\RefUserAuth\auth.disco" />
+    <None Include="Service References\RefUserAuth\configuration91.svcinfo" />
+    <None Include="Service References\RefUserAuth\configuration.svcinfo" />
+    <None Include="Service References\RefUserAuth\DuoSoftware.DuoSoftPhone.RefUserAuth.AccountContracts1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefUserAuth\DuoSoftware.DuoSoftPhone.RefUserAuth.UserAuth1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefUserAuth\DuoSoftware.DuoSoftPhone.RefUserAuth.ViewObjects1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RefUserAuth\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RefResourceProxy\ResourceProxy1.disco" />
+    <None Include="Resources\AgentInboundMode.png" />
+    <None Include="Resources\AgentInboundModeQ.gif" />
+    <None Include="Resources\AgentOutboundMode.png" />
+    <None Include="Resources\AgentOutboundModeQ.gif" />
+    <None Include="Resources\AgentInboundMode1.png" />
+    <None Include="Resources\AgentInboundModeQ1.gif" />
+    <None Include="Resources\AgentOutboundMode1.png" />
+    <None Include="Resources\AgentOutboundModeQ1.gif" />
+    <None Include="Service References\RefResourceChecker\ResourceStatusChecker1.disco" />
+    <None Include="Service References\RefResourceMonitoring\ResourceMonitoring.disco" />
+    <None Include="Service References\RefResourceMonitoring\configuration91.svcinfo" />
+    <None Include="Service References\RefResourceMonitoring\configuration.svcinfo" />
+    <None Include="Service References\RefResourceMonitoring\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RefFramework\configuration91.svcinfo" />
+    <None Include="Service References\RefFramework\configuration.svcinfo" />
+    <None Include="Service References\RefFramework\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RefFramework\item1.disco" />
+    <None Include="Resources\AddToFavoritesHS.bmp" />
+    <None Include="Resources\Control_WebBrowser.bmp" />
+    <None Include="Resources\Critical.bmp" />
+    <None Include="Resources\DeleteFolderHS.bmp" />
+    <None Include="Resources\DeleteHS.bmp" />
+    <None Include="Resources\DoubleLeftArrowHS.bmp" />
+    <None Include="Resources\DoubleRightArrowHS.bmp" />
+    <None Include="Resources\Expand_large.bmp" />
+    <None Include="Resources\GoLtrHS.bmp" />
+    <None Include="Resources\HomeHS.bmp" />
+    <None Include="Resources\HTMLPageHS.bmp" />
+    <None Include="Resources\InsertTabControlHS.BMP" />
+    <None Include="Resources\MultiplePagesHS.bmp" />
+    <None Include="Resources\NewDocumentHS.BMP" />
+    <None Include="Resources\NewFolderHS.bmp" />
+    <None Include="Resources\ProtectFormHS.bmp" />
+    <None Include="Resources\RefreshDocViewHS.bmp" />
+    <None Include="Resources\RightArrowHS.bmp" />
+    <None Include="Resources\RightsRestrictedHS.bmp" />
+    <None Include="Resources\RightToLeftDoucmentHS.bmp" />
+    <None Include="Resources\SearchWebHS.bmp" />
+    <None Include="Resources\ViewThumbnailsHS.bmp" />
+    <Content Include="SIPSetting.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\RefResourceProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RefResourceProxy\configuration.svcinfo" />
+    <None Include="Service References\RefResourceProxy\configuration91.svcinfo" />
+    <None Include="Resources\hold.png" />
+    <None Include="Resources\reject.png" />
+    <None Include="Resources\answer11.png" />
+    <None Include="Resources\answer3.png" />
+    <None Include="Resources\answer2.png" />
+    <None Include="Resources\answer1.png" />
+    <None Include="Resources\answer.png" />
+    <None Include="Resources\answer7.png" />
+    <None Include="Resources\phone.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\RefCcDispatch\" />
+    <WCFMetadataStorage Include="Service References\RefCommonData\" />
+    <WCFMetadataStorage Include="Service References\RefDuoMainConfigService\" />
+    <WCFMetadataStorage Include="Service References\RefEngagement\" />
+    <WCFMetadataStorage Include="Service References\RefFramework\" />
+    <WCFMetadataStorage Include="Service References\RefProfileManagement\" />
+    <WCFMetadataStorage Include="Service References\RefResourceChecker\" />
+    <WCFMetadataStorage Include="Service References\RefResourceMonitoring\" />
+    <WCFMetadataStorage Include="Service References\RefResourceProxy\" />
+    <WCFMetadataStorage Include="Service References\RefUserAuth\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="DuoCallTesterLicenseKey\DuoCallTesterLicenseKey.csproj">
+      <Project>{84AB3281-2D97-4CF6-952F-A900386D8359}</Project>
+      <Name>DuoCallTesterLicenseKey</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

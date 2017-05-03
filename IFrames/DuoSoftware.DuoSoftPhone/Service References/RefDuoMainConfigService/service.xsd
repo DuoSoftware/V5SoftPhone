@@ -1,0 +1,1301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="DeleteCallRoute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="routeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCallRouteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCallRouteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteInbOutbRule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="routeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ruleId" type="xs:int" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="direction" type="q1:Direction" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteInbOutbRuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteInbOutbRuleResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveToCallRuleOutbound">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="routCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="callRuleList" nillable="true" type="q2:ArrayOfCallRuleInfoOutbound" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveToCallRuleOutboundResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveToCallRuleOutboundResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveToCallRuleInbound">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="routCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="callRuleList" nillable="true" type="q3:ArrayOfCallRuleInfoInbound" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveToCallRuleInboundResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveToCallRuleInboundResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallRuleOutboundList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="routeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallRuleOutboundListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetCallRuleOutboundListResult" nillable="true" type="q4:ArrayOfCallRuleInfoOutbound" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallRuleInboundList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="routeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallRuleInboundListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetCallRuleInboundListResult" nillable="true" type="q5:ArrayOfCallRuleInfoInbound" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveCallRouteInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="routeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="routeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaxCallInbound" type="xs:int" />
+        <xs:element minOccurs="0" name="MaxCallOutbound" type="xs:int" />
+        <xs:element minOccurs="0" name="MaxFaxInbound" type="xs:int" />
+        <xs:element minOccurs="0" name="MaxFaxOutbound" type="xs:int" />
+        <xs:element minOccurs="0" name="transID" type="xs:decimal" />
+        <xs:element minOccurs="0" name="recStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="opStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveCallRouteInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveCallRouteInfoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCallRouteDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCallRouteDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="getCallRouteDetailsResult" nillable="true" type="q6:ArrayOfCallRouteInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddInternalRule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dnis" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ani" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="targetScript" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="enabledStatus" type="xs:boolean" />
+        <xs:element minOccurs="0" name="transId" type="xs:int" />
+        <xs:element minOccurs="0" name="aniTransId" type="xs:int" />
+        <xs:element minOccurs="0" name="context" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="schedule" type="xs:int" />
+        <xs:element minOccurs="0" name="priority" type="xs:int" />
+        <xs:element minOccurs="0" name="param" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="dialPattern" type="q7:DirectDialPattern" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddInternalRuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddInternalRuleResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddContext">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="contextName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contextDescription" nillable="true" type="xs:string" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="contextCat" type="q8:ContextCat" />
+        <xs:element minOccurs="0" name="queueEnabled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="parkEnabled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bypassMedia" type="xs:boolean" />
+        <xs:element minOccurs="0" name="voicemailActive" type="xs:boolean" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddContextResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddContextResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCsInternalContexts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCsInternalContextsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetCsInternalContextsResult" nillable="true" type="q9:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddTranslation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="transName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lAdd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lRemove" type="xs:int" />
+        <xs:element minOccurs="0" name="rAdd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rRemove" type="xs:int" />
+        <xs:element minOccurs="0" name="replace" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="repDest" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="repOrig" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddTranslationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddTranslationResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTranslation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTranslationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetTranslationResult" nillable="true" type="q10:ArrayOfTranslationinfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetSIPPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="authenticatedUsername" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetSIPPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ResetSIPPasswordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SIPAccountCreation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="domain" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emailAddr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="extension" type="xs:int" />
+        <xs:element minOccurs="0" name="context" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="registerAllowed" type="xs:boolean" />
+        <xs:element minOccurs="0" name="guUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SIPAccountCreationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SIPAccountCreationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSIPAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSIPAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSIPAccountResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSIPAccountDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSIPAccountDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="getSIPAccountDetailsResult" nillable="true" type="q11:SIPAccDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSIPDetailsForUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSIPDetailsForUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetSIPDetailsForUserIdResult" nillable="true" type="q12:SIPAccDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateExtensionUsage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="extension" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="extTy" type="q13:ExtType" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateExtensionUsageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateExtensionUsageResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateDomainUsage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="domain" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateDomainUsageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateDomainUsageResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserExtension">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="extList" nillable="true" type="q14:ArrayOfUsrExtensions" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserExtensionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="UpdateUserExtensionResult" nillable="true" type="q15:SaveResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDidForExtension">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="guUserDeviceId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="didNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="didEnabled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDidForExtensionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetDidForExtensionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDodForExtension">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="guUserDeviceId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dodNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dodEnabled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDodForExtensionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetDodForExtensionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserExtensions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="extType" type="q16:ExtType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserExtensionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetUserExtensionsResult" nillable="true" type="q17:ArrayOfUsrExtensions" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGroupDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetGroupDetailsResult" nillable="true" type="q18:ArrayOfUserGroup" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="usrGrpList" nillable="true" type="q19:ArrayOfGroupInfo" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUserGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUserGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="groupName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUserGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteUserGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveUsersFromGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="groupName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="removableUsers" nillable="true" type="q20:ArrayOfstring" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoveUsersFromGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RemoveUsersFromGroupResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCallForwarding">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="extension" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCallForwardingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCallForwardingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCallForwardingInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="callForwardingInfo" nillable="true" type="q21:ArrayOfCallForwardingInfo" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCallForwardingInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveCallForwardingInfoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallForwardingInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallForwardingInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetCallForwardingInfoResult" nillable="true" type="q22:ArrayOfCallForwardingInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterMainCSDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="regKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="zone" type="xs:int" />
+        <xs:element minOccurs="0" name="transactionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="recStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="opStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xmppUsername" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resourceId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterMainCSDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="RegisterMainCSDetailsResult" nillable="true" type="q23:CallServerList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetXMPPUsername">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetXMPPUsernameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetXMPPUsernameResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCallServer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="csGuid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCallServerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCallServerResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallServerActivated">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csGuid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CallServerActivatedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="CallServerActivatedResult" nillable="true" type="q24:CallServerLoginData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMainCSDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csGuid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="csName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csVersion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="opStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="zone" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateMainCSDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateMainCSDetailsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallServerList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallServerListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetCallServerListResult" nillable="true" type="q25:ArrayOfCallServerList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallServerTypesList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallServerTypesListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetCallServerTypesListResult" nillable="true" type="q26:ArrayOfCallServerTypes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZonesList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZonesListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetZonesListResult" nillable="true" type="q27:ArrayOfZones" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCallServerChannels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="csChannels" nillable="true" type="q28:ArrayOfChannels" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCallServerChannelsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveCallServerChannelsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallServerChannels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallServerChannelsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetCallServerChannelsResult" nillable="true" type="q29:ArrayOfChannels" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCallServerClipPaths">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="clipPaths" nillable="true" type="q30:ArrayOfstring" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCallServerClipPathsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveCallServerClipPathsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallServerClipPaths">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallServerClipPathsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetCallServerClipPathsResult" nillable="true" type="q31:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveDevices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="configure" type="q32:DeviceConfigureStatus" />
+        <xs:element minOccurs="0" name="voice" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fax" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveDevicesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveDevicesResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDevices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDevicesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetDevicesResult" nillable="true" type="q33:Devices" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveNetworkConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="networkConf" nillable="true" type="q34:ArrayOfNetwork" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveNetworkConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveNetworkConfigResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNetworkConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNetworkConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetNetworkConfigResult" nillable="true" type="q35:ArrayOfNetwork" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditConcurrentVoicePortCounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csGuid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="outgoingPorts" type="xs:int" />
+        <xs:element minOccurs="0" name="incomingPorts" type="xs:int" />
+        <xs:element minOccurs="0" name="confPorts" type="xs:int" />
+        <xs:element minOccurs="0" name="videoPorts" type="xs:int" />
+        <xs:element minOccurs="0" name="faxPorts" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditConcurrentVoicePortCountsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EditConcurrentVoicePortCountsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConcurrentVoicePortLimits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConcurrentVoicePortLimitsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetConcurrentVoicePortLimitsResult" nillable="true" type="q36:ConcurrentVoicePortLimits" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCSConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csGuid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="mainIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="recordPath" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="voxPath" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="agentGreetingPath" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sipServer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCSConfigurationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCSConfigurationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCSConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCSConfigurationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetCSConfigurationResult" nillable="true" type="q37:CallServerMainConfigurations" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidCallserverIPs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetValidCallserverIPsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetValidCallserverIPsResult" nillable="true" type="q38:ArrayOfKeyValueOfintstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallServerAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="csID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallServerAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetCallServerAccountResult" nillable="true" type="q39:CallServerAccount" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallControllerList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCallControllerListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetCallControllerListResult" nillable="true" type="q40:ArrayOfCallControllerConf" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCallControllerDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="ccConf" nillable="true" type="q41:CallControllerConf" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCallControllerDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCallControllerDetailsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCallControllerDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="ccConf" nillable="true" type="q42:CallControllerConf" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCallControllerDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveCallControllerDetailsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTrunk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTrunkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteTrunkResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveInitialTrunkDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="trunkName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="trunkClass" type="q43:TrunkClass" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="trunkType" type="q44:TrunkType" />
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="trunkCat" type="q45:TrunkCategory" />
+        <xs:element minOccurs="0" name="transactionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="recStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="opStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="noOfOutgoingCalls" type="xs:int" />
+        <xs:element minOccurs="0" name="noOfIncomingCalls" type="xs:int" />
+        <xs:element minOccurs="0" name="Operator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="defaultConfEnabled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ipUrl" nillable="true" type="xs:string" />
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="regDir" type="q46:RegistrationDirection" />
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="domain" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="profile" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveInitialTrunkDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="SaveInitialTrunkDetailsResult" nillable="true" type="q47:TrunkDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTrunkByUniqueId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkUuid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="trunkCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="trunkName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="trunkClass" type="q48:TrunkClass" />
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="trunkType" type="q49:TrunkType" />
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="trunkCat" type="q50:TrunkCategory" />
+        <xs:element minOccurs="0" name="transactionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="recStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="opStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="noOfOutgoingCalls" type="xs:int" />
+        <xs:element minOccurs="0" name="noOfIncomingCalls" type="xs:int" />
+        <xs:element minOccurs="0" name="Operator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="defaultConfEnabled" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ipUrl" nillable="true" type="xs:string" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="regDir" type="q51:RegistrationDirection" />
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="domain" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="profile" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateTrunkByUniqueIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateTrunkByUniqueIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrunkList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrunkListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetTrunkListResult" nillable="true" type="q52:ArrayOfTrunkDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssignServerToTrunk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trGuid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="trunkID" type="xs:int" />
+        <xs:element minOccurs="0" name="serverOrZoneID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="type" type="q53:TrunkConnection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssignServerToTrunkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AssignServerToTrunkResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerInfoForTrunk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerInfoForTrunkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetServerInfoForTrunkResult" nillable="true" type="q54:ServerInfoForTrunk" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerInfoForTrunkByUuid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkUuid" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerInfoForTrunkByUuidResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetServerInfoForTrunkByUuidResult" nillable="true" type="q55:ServerInfoForTrunk" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SavePhoneNumbersForTrunk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkID" type="xs:int" />
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="myNumbers" nillable="true" type="q56:ArrayOfTrunkPhoneNumbers" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SavePhoneNumbersForTrunkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="SavePhoneNumbersForTrunkResult" nillable="true" type="q57:ArrayOfTrunkPhoneNumbers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhoneNumberListForTrunk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhoneNumberListForTrunkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetPhoneNumberListForTrunkResult" nillable="true" type="q58:ArrayOfTrunkPhoneNumbers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhoneNumbersForAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhoneNumbersForAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetPhoneNumbersForAccountResult" nillable="true" type="q59:ArrayOfTrunkPhoneNumbers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyTrunkFaxNumbers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyTrunkFaxNumbersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetMyTrunkFaxNumbersResult" nillable="true" type="q60:ArrayOfTrunkPhoneNumbers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyTrunkPhoneNumbers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyTrunkPhoneNumbersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetMyTrunkPhoneNumbersResult" nillable="true" type="q61:ArrayOfTrunkPhoneNumbers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyTrunkUnAuthPhoneNumbers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkID" type="xs:int" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMyTrunkUnAuthPhoneNumbersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetMyTrunkUnAuthPhoneNumbersResult" nillable="true" type="q62:ArrayOfTrunkPhoneNumbers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveInitialTrunkDetailsRegIn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="trunkName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="trunkClass" type="q63:TrunkClass" />
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="trunkType" type="q64:TrunkType" />
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="trunkCat" type="q65:TrunkCategory" />
+        <xs:element minOccurs="0" name="transactionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="recStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="opStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="noOfOutgoingCalls" type="xs:int" />
+        <xs:element minOccurs="0" name="noOfIncomingCalls" type="xs:int" />
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="regDir" type="q66:RegistrationDirection" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="profile" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveInitialTrunkDetailsRegInResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="SaveInitialTrunkDetailsRegInResult" nillable="true" type="q67:AutoGeneratedAccDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeTrunkNumberUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeTrunkNumberUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChangeTrunkNumberUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveTrunkNumberByCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="trunkCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="trNumberInfo" nillable="true" type="q68:TrunkPhoneNumbers" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveTrunkNumberByCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveTrunkNumberByCodeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConferenceList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConferenceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetConferenceListResult" nillable="true" type="q69:ArrayOfConferenceInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConferenceUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="roomName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConferenceUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="GetConferenceUsersResult" nillable="true" type="q70:ArrayOfConferenceUser" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddOrUpdateConference">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="confInfo" nillable="true" type="q71:ConferenceInfo" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddOrUpdateConferenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddOrUpdateConferenceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteConferenceRoom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="roomName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteConferenceRoomResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteConferenceRoomResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddOrUpdateConferenceMember">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" minOccurs="0" name="confUserInfo" nillable="true" type="q72:ConferenceUser" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddOrUpdateConferenceMemberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddOrUpdateConferenceMemberResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteConferenceMember">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="roomName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteConferenceMemberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteConferenceMemberResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9998/?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="SendDataToAgent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="agentInformation" nillable="true" type="q1:ArrayOfKeyValueOfstringanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendDataToAgentResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeCommandByAgent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="agentName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="command" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="commandData" nillable="true" type="q2:ArrayOfKeyValueOfstringanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeCommandByAgentResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeCommandByUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="command" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="commandData" nillable="true" type="q3:ArrayOfKeyValueOfstringanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeCommandByUserResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeCommandByGuUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="guUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="command" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="commandData" nillable="true" type="q4:ArrayOfKeyValueOfstringanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeCommandByGuUserIdResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeCommandBySecurityToken">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="command" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="commandData" nillable="true" type="q5:ArrayOfKeyValueOfstringanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeCommandBySecurityTokenResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeClientCommandFromBackend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="securityToken" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="agentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="command" nillable="true" type="xs:string" />
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="commandData" nillable="true" type="q6:ArrayOfKeyValueOfstringanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvokeClientCommandFromBackendResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

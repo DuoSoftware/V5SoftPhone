@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cbf6ba7a-7483-43f7-bad5-db6be42d9cce" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/HUTCHCSV5/ContactV5Services/DuoEngagementServiceSelfHost" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DuoEngagementService.wsdl" MetadataType="Wsdl" ID="f9787164-6980-4810-92fe-80d3cc1c37e0" SourceId="1" SourceUrl="http://localhost/HUTCHCSV5/ContactV5Services/DuoEngagementServiceSelfHost?wsdl" />
+    <MetadataFile FileName="DuoEngagementServiceSelfHost.xsd" MetadataType="Schema" ID="d952da2d-ca1c-40e4-a3a1-b607c36c1dad" SourceId="1" SourceUrl="http://localhost/HUTCHCSV5/ContactV5Services/DuoEngagementServiceSelfHost?xsd=xsd0" />
+    <MetadataFile FileName="DuoEngagementServiceSelfHost1.xsd" MetadataType="Schema" ID="78869b4d-d395-47f5-9278-94fdf42dc35e" SourceId="1" SourceUrl="http://localhost/HUTCHCSV5/ContactV5Services/DuoEngagementServiceSelfHost?xsd=xsd1" />
+    <MetadataFile FileName="DuoEngagementServiceSelfHost2.xsd" MetadataType="Schema" ID="1278ed09-8bdb-4b17-ba1d-55a1637e6154" SourceId="1" SourceUrl="http://localhost/HUTCHCSV5/ContactV5Services/DuoEngagementServiceSelfHost?xsd=xsd2" />
+    <MetadataFile FileName="DuoEngagementServiceSelfHost3.xsd" MetadataType="Schema" ID="ca1db56a-0a76-4de0-a663-539f112d7084" SourceId="1" SourceUrl="http://localhost/HUTCHCSV5/ContactV5Services/DuoEngagementServiceSelfHost?xsd=xsd3" />
+    <MetadataFile FileName="DuoEngagementServiceSelfHost4.xsd" MetadataType="Schema" ID="eddf8cd9-3c9e-42e2-b58b-96524f7370f9" SourceId="1" SourceUrl="http://localhost/HUTCHCSV5/ContactV5Services/DuoEngagementServiceSelfHost?xsd=xsd4" />
+    <MetadataFile FileName="DuoEngagementServiceSelfHost.disco" MetadataType="Disco" ID="978bef35-5687-42cc-a74f-ee9937f08779" SourceId="1" SourceUrl="http://localhost/HUTCHCSV5/ContactV5Services/DuoEngagementServiceSelfHost?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

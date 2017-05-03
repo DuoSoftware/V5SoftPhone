@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="16910062-9582-4f08-9e82-c2a4f8ddbbae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.194:5429/ResourceProxy" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ResourceProxy.xsd" MetadataType="Schema" ID="d9226d18-71cf-4bf5-b282-e2536545791d" SourceId="1" SourceUrl="http://192.168.1.194:5429/ResourceProxy?xsd=xsd0" />
+    <MetadataFile FileName="ResourceProxy1.xsd" MetadataType="Schema" ID="e406f7eb-9cdb-41b8-a6e0-505417800e0d" SourceId="1" SourceUrl="http://192.168.1.194:5429/ResourceProxy?xsd=xsd3" />
+    <MetadataFile FileName="ResourceProxy2.xsd" MetadataType="Schema" ID="04496cc5-da56-4764-ad72-499dfe0a1cb4" SourceId="1" SourceUrl="http://192.168.1.194:5429/ResourceProxy?xsd=xsd1" />
+    <MetadataFile FileName="ResourceProxyService1.wsdl" MetadataType="Wsdl" ID="c290b9cb-84c6-4d37-9bf6-ba7b21a8aa08" SourceId="1" SourceUrl="http://192.168.1.194:5429/ResourceProxy?wsdl" />
+    <MetadataFile FileName="ResourceProxy.disco" MetadataType="Disco" ID="989aad97-f882-4211-acb2-b758d395a9d9" SourceId="1" SourceUrl="http://192.168.1.194:5429/ResourceProxy?disco" />
+    <MetadataFile FileName="ResourceProxy3.xsd" MetadataType="Schema" ID="a27d62f6-0d23-464c-9a5e-c17665ca69b8" SourceId="1" SourceUrl="http://192.168.1.194:5429/ResourceProxy?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

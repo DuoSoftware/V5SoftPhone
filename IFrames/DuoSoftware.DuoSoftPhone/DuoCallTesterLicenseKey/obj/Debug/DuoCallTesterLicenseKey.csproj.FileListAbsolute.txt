@@ -1,0 +1,4 @@
+E:\DuoProject\Applications\Duo Softphone\IFrames\DuoSoftware.DuoSoftPhone\DuoCallTesterLicenseKey\bin\Debug\DuoCallTesterLicenseKey.dll
+E:\DuoProject\Applications\Duo Softphone\IFrames\DuoSoftware.DuoSoftPhone\DuoCallTesterLicenseKey\bin\Debug\DuoCallTesterLicenseKey.pdb
+E:\DuoProject\Applications\Duo Softphone\IFrames\DuoSoftware.DuoSoftPhone\DuoCallTesterLicenseKey\obj\Debug\DuoCallTesterLicenseKey.dll
+E:\DuoProject\Applications\Duo Softphone\IFrames\DuoSoftware.DuoSoftPhone\DuoCallTesterLicenseKey\obj\Debug\DuoCallTesterLicenseKey.pdb

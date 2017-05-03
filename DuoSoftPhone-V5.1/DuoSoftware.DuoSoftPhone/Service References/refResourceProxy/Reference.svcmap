@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="16910062-9582-4f08-9e82-c2a4f8ddbbae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.2.35:5430/ResourceProxy" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ResourceProxy.xsd" MetadataType="Schema" ID="90b8c0f1-4adb-45da-885e-d12c091a1eac" SourceId="1" SourceUrl="http://duo-appsvr01:5430/ResourceProxy?xsd=xsd2" />
+    <MetadataFile FileName="ResourceProxy1.xsd" MetadataType="Schema" ID="432fac3a-5a1f-48cb-aabd-d680fb31de9f" SourceId="1" SourceUrl="http://duo-appsvr01:5430/ResourceProxy?xsd=xsd3" />
+    <MetadataFile FileName="ResourceProxy2.xsd" MetadataType="Schema" ID="84703595-d01d-4a52-b671-85df427d9e03" SourceId="1" SourceUrl="http://duo-appsvr01:5430/ResourceProxy?xsd=xsd0" />
+    <MetadataFile FileName="ResourceProxyService1.wsdl" MetadataType="Wsdl" ID="0be1d0f1-4414-44d8-b17e-91866a09ccdf" SourceId="1" SourceUrl="http://duo-appsvr01:5430/ResourceProxy?wsdl" />
+    <MetadataFile FileName="ResourceProxy.disco" MetadataType="Disco" ID="b342d6d4-3d2c-4c5b-823f-0d215b7273ba" SourceId="1" SourceUrl="http://duo-appsvr01:5430/ResourceProxy?disco" />
+    <MetadataFile FileName="ResourceProxy3.xsd" MetadataType="Schema" ID="e8d1c486-ff2a-43dc-b378-5ed44d851b96" SourceId="1" SourceUrl="http://duo-appsvr01:5430/ResourceProxy?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

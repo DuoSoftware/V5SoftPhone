@@ -1,0 +1,1535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DuoCSConfigService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICallServerOp_DeleteCallRoute_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCallRoute" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_DeleteCallRoute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCallRouteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_DeleteInbOutbRule_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInbOutbRule" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_DeleteInbOutbRule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInbOutbRuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_saveToCallRuleOutbound_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveToCallRuleOutbound" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_saveToCallRuleOutbound_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveToCallRuleOutboundResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_saveToCallRuleInbound_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveToCallRuleInbound" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_saveToCallRuleInbound_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveToCallRuleInboundResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_GetCallRuleOutboundList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallRuleOutboundList" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_GetCallRuleOutboundList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallRuleOutboundListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_GetCallRuleInboundList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallRuleInboundList" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_GetCallRuleInboundList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallRuleInboundListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_saveCallRouteInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveCallRouteInfo" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_saveCallRouteInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveCallRouteInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_getCallRouteDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCallRouteDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_getCallRouteDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCallRouteDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_AddInternalRule_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddInternalRule" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_AddInternalRule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddInternalRuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_AddContext_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddContext" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_AddContext_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddContextResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_GetCsInternalContexts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCsInternalContexts" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_GetCsInternalContexts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCsInternalContextsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_AddTranslation_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTranslation" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_AddTranslation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTranslationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_GetTranslation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTranslation" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerOp_GetTranslation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTranslationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_ResetSIPPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetSIPPassword" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_ResetSIPPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetSIPPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_SIPAccountCreation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SIPAccountCreation" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_SIPAccountCreation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SIPAccountCreationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_DeleteSIPAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSIPAccount" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_DeleteSIPAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSIPAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_getSIPAccountDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSIPAccountDetails" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_getSIPAccountDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSIPAccountDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_GetSIPDetailsForUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSIPDetailsForUserId" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_GetSIPDetailsForUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSIPDetailsForUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_ValidateExtensionUsage_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateExtensionUsage" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_ValidateExtensionUsage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateExtensionUsageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_ValidateDomainUsage_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateDomainUsage" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_ValidateDomainUsage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateDomainUsageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_UpdateUserExtension_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserExtension" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_UpdateUserExtension_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_SetDidForExtension_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDidForExtension" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_SetDidForExtension_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDidForExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_SetDodForExtension_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDodForExtension" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_SetDodForExtension_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDodForExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_GetUserExtensions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserExtensions" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_GetUserExtensions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserExtensionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_GetGroupDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupDetails" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_GetGroupDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_UpdateUserGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_UpdateUserGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_DeleteUserGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_DeleteUserGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_RemoveUsersFromGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveUsersFromGroup" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_RemoveUsersFromGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveUsersFromGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_DeleteCallForwarding_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCallForwarding" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_DeleteCallForwarding_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCallForwardingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_SaveCallForwardingInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCallForwardingInfo" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_SaveCallForwardingInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCallForwardingInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_GetCallForwardingInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallForwardingInfo" />
+  </wsdl:message>
+  <wsdl:message name="ISIPRegistration_GetCallForwardingInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallForwardingInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_RegisterMainCSDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterMainCSDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_RegisterMainCSDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterMainCSDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetXMPPUsername_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetXMPPUsername" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetXMPPUsername_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetXMPPUsernameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_DeleteCallServer_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCallServer" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_DeleteCallServer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCallServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_CallServerActivated_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallServerActivated" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_CallServerActivated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallServerActivatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_UpdateMainCSDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMainCSDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_UpdateMainCSDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMainCSDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallServerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallServerList" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallServerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallServerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallServerTypesList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallServerTypesList" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallServerTypesList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallServerTypesListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetZonesList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZonesList" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetZonesList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZonesListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_SaveCallServerChannels_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCallServerChannels" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_SaveCallServerChannels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCallServerChannelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallServerChannels_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallServerChannels" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallServerChannels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallServerChannelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_SaveCallServerClipPaths_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCallServerClipPaths" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_SaveCallServerClipPaths_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCallServerClipPathsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallServerClipPaths_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallServerClipPaths" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallServerClipPaths_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallServerClipPathsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_SaveDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDevices" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_SaveDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevices" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_SaveNetworkConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveNetworkConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_SaveNetworkConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveNetworkConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetNetworkConfig_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNetworkConfig" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetNetworkConfig_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNetworkConfigResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_EditConcurrentVoicePortCounts_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditConcurrentVoicePortCounts" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_EditConcurrentVoicePortCounts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditConcurrentVoicePortCountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetConcurrentVoicePortLimits_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConcurrentVoicePortLimits" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetConcurrentVoicePortLimits_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConcurrentVoicePortLimitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_UpdateCSConfiguration_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCSConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_UpdateCSConfiguration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCSConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCSConfiguration_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCSConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCSConfiguration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCSConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetValidCallserverIPs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetValidCallserverIPs" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetValidCallserverIPs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetValidCallserverIPsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallServerAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallServerAccount" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallServerAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallServerAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallControllerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallControllerList" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_GetCallControllerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCallControllerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_UpdateCallControllerDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCallControllerDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_UpdateCallControllerDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCallControllerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_SaveCallControllerDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCallControllerDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICallServerRegistration_SaveCallControllerDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCallControllerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_DeleteTrunk_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTrunk" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_DeleteTrunk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTrunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_SaveInitialTrunkDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveInitialTrunkDetails" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_SaveInitialTrunkDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveInitialTrunkDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_UpdateTrunkByUniqueId_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTrunkByUniqueId" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_UpdateTrunkByUniqueId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTrunkByUniqueIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetTrunkList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrunkList" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetTrunkList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrunkListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_AssignServerToTrunk_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignServerToTrunk" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_AssignServerToTrunk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignServerToTrunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetServerInfoForTrunk_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerInfoForTrunk" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetServerInfoForTrunk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerInfoForTrunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetServerInfoForTrunkByUuid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerInfoForTrunkByUuid" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetServerInfoForTrunkByUuid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerInfoForTrunkByUuidResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_SavePhoneNumbersForTrunk_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavePhoneNumbersForTrunk" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_SavePhoneNumbersForTrunk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavePhoneNumbersForTrunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetPhoneNumberListForTrunk_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhoneNumberListForTrunk" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetPhoneNumberListForTrunk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhoneNumberListForTrunkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetPhoneNumbersForAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhoneNumbersForAccount" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetPhoneNumbersForAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhoneNumbersForAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetMyTrunkFaxNumbers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyTrunkFaxNumbers" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetMyTrunkFaxNumbers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyTrunkFaxNumbersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetMyTrunkPhoneNumbers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyTrunkPhoneNumbers" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetMyTrunkPhoneNumbers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyTrunkPhoneNumbersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetMyTrunkUnAuthPhoneNumbers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyTrunkUnAuthPhoneNumbers" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_GetMyTrunkUnAuthPhoneNumbers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyTrunkUnAuthPhoneNumbersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_SaveInitialTrunkDetailsRegIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveInitialTrunkDetailsRegIn" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_SaveInitialTrunkDetailsRegIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveInitialTrunkDetailsRegInResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_ChangeTrunkNumberUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeTrunkNumberUser" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_ChangeTrunkNumberUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeTrunkNumberUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_SaveTrunkNumberByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTrunkNumberByCode" />
+  </wsdl:message>
+  <wsdl:message name="ITrunkRegistration_SaveTrunkNumberByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTrunkNumberByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConference_GetConferenceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConferenceList" />
+  </wsdl:message>
+  <wsdl:message name="IConference_GetConferenceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConferenceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConference_GetConferenceUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConferenceUsers" />
+  </wsdl:message>
+  <wsdl:message name="IConference_GetConferenceUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConferenceUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConference_AddOrUpdateConference_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateConference" />
+  </wsdl:message>
+  <wsdl:message name="IConference_AddOrUpdateConference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateConferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConference_DeleteConferenceRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConferenceRoom" />
+  </wsdl:message>
+  <wsdl:message name="IConference_DeleteConferenceRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConferenceRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConference_AddOrUpdateConferenceMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateConferenceMember" />
+  </wsdl:message>
+  <wsdl:message name="IConference_AddOrUpdateConferenceMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateConferenceMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IConference_DeleteConferenceMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConferenceMember" />
+  </wsdl:message>
+  <wsdl:message name="IConference_DeleteConferenceMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConferenceMemberResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICallServerOp">
+    <wsdl:operation name="DeleteCallRoute">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/DeleteCallRoute" message="tns:ICallServerOp_DeleteCallRoute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/DeleteCallRouteResponse" message="tns:ICallServerOp_DeleteCallRoute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInbOutbRule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/DeleteInbOutbRule" message="tns:ICallServerOp_DeleteInbOutbRule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/DeleteInbOutbRuleResponse" message="tns:ICallServerOp_DeleteInbOutbRule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveToCallRuleOutbound">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/saveToCallRuleOutbound" message="tns:ICallServerOp_saveToCallRuleOutbound_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/saveToCallRuleOutboundResponse" message="tns:ICallServerOp_saveToCallRuleOutbound_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveToCallRuleInbound">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/saveToCallRuleInbound" message="tns:ICallServerOp_saveToCallRuleInbound_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/saveToCallRuleInboundResponse" message="tns:ICallServerOp_saveToCallRuleInbound_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallRuleOutboundList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/GetCallRuleOutboundList" message="tns:ICallServerOp_GetCallRuleOutboundList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/GetCallRuleOutboundListResponse" message="tns:ICallServerOp_GetCallRuleOutboundList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallRuleInboundList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/GetCallRuleInboundList" message="tns:ICallServerOp_GetCallRuleInboundList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/GetCallRuleInboundListResponse" message="tns:ICallServerOp_GetCallRuleInboundList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveCallRouteInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/saveCallRouteInfo" message="tns:ICallServerOp_saveCallRouteInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/saveCallRouteInfoResponse" message="tns:ICallServerOp_saveCallRouteInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCallRouteDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/getCallRouteDetails" message="tns:ICallServerOp_getCallRouteDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/getCallRouteDetailsResponse" message="tns:ICallServerOp_getCallRouteDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddInternalRule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/AddInternalRule" message="tns:ICallServerOp_AddInternalRule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/AddInternalRuleResponse" message="tns:ICallServerOp_AddInternalRule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddContext">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/AddContext" message="tns:ICallServerOp_AddContext_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/AddContextResponse" message="tns:ICallServerOp_AddContext_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCsInternalContexts">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/GetCsInternalContexts" message="tns:ICallServerOp_GetCsInternalContexts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/GetCsInternalContextsResponse" message="tns:ICallServerOp_GetCsInternalContexts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTranslation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/AddTranslation" message="tns:ICallServerOp_AddTranslation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/AddTranslationResponse" message="tns:ICallServerOp_AddTranslation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTranslation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerOp/GetTranslation" message="tns:ICallServerOp_GetTranslation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerOp/GetTranslationResponse" message="tns:ICallServerOp_GetTranslation_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ISIPRegistration">
+    <wsdl:operation name="ResetSIPPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/ResetSIPPassword" message="tns:ISIPRegistration_ResetSIPPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/ResetSIPPasswordResponse" message="tns:ISIPRegistration_ResetSIPPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SIPAccountCreation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/SIPAccountCreation" message="tns:ISIPRegistration_SIPAccountCreation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/SIPAccountCreationResponse" message="tns:ISIPRegistration_SIPAccountCreation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSIPAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/DeleteSIPAccount" message="tns:ISIPRegistration_DeleteSIPAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/DeleteSIPAccountResponse" message="tns:ISIPRegistration_DeleteSIPAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSIPAccountDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/getSIPAccountDetails" message="tns:ISIPRegistration_getSIPAccountDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/getSIPAccountDetailsResponse" message="tns:ISIPRegistration_getSIPAccountDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSIPDetailsForUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/GetSIPDetailsForUserId" message="tns:ISIPRegistration_GetSIPDetailsForUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/GetSIPDetailsForUserIdResponse" message="tns:ISIPRegistration_GetSIPDetailsForUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateExtensionUsage">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/ValidateExtensionUsage" message="tns:ISIPRegistration_ValidateExtensionUsage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/ValidateExtensionUsageResponse" message="tns:ISIPRegistration_ValidateExtensionUsage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateDomainUsage">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/ValidateDomainUsage" message="tns:ISIPRegistration_ValidateDomainUsage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/ValidateDomainUsageResponse" message="tns:ISIPRegistration_ValidateDomainUsage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserExtension">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/UpdateUserExtension" message="tns:ISIPRegistration_UpdateUserExtension_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/UpdateUserExtensionResponse" message="tns:ISIPRegistration_UpdateUserExtension_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDidForExtension">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/SetDidForExtension" message="tns:ISIPRegistration_SetDidForExtension_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/SetDidForExtensionResponse" message="tns:ISIPRegistration_SetDidForExtension_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDodForExtension">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/SetDodForExtension" message="tns:ISIPRegistration_SetDodForExtension_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/SetDodForExtensionResponse" message="tns:ISIPRegistration_SetDodForExtension_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserExtensions">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/GetUserExtensions" message="tns:ISIPRegistration_GetUserExtensions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/GetUserExtensionsResponse" message="tns:ISIPRegistration_GetUserExtensions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/GetGroupDetails" message="tns:ISIPRegistration_GetGroupDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/GetGroupDetailsResponse" message="tns:ISIPRegistration_GetGroupDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/UpdateUserGroup" message="tns:ISIPRegistration_UpdateUserGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/UpdateUserGroupResponse" message="tns:ISIPRegistration_UpdateUserGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/DeleteUserGroup" message="tns:ISIPRegistration_DeleteUserGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/DeleteUserGroupResponse" message="tns:ISIPRegistration_DeleteUserGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUsersFromGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/RemoveUsersFromGroup" message="tns:ISIPRegistration_RemoveUsersFromGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/RemoveUsersFromGroupResponse" message="tns:ISIPRegistration_RemoveUsersFromGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCallForwarding">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/DeleteCallForwarding" message="tns:ISIPRegistration_DeleteCallForwarding_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/DeleteCallForwardingResponse" message="tns:ISIPRegistration_DeleteCallForwarding_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCallForwardingInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/SaveCallForwardingInfo" message="tns:ISIPRegistration_SaveCallForwardingInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/SaveCallForwardingInfoResponse" message="tns:ISIPRegistration_SaveCallForwardingInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallForwardingInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISIPRegistration/GetCallForwardingInfo" message="tns:ISIPRegistration_GetCallForwardingInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISIPRegistration/GetCallForwardingInfoResponse" message="tns:ISIPRegistration_GetCallForwardingInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ICallServerRegistration">
+    <wsdl:operation name="RegisterMainCSDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/RegisterMainCSDetails" message="tns:ICallServerRegistration_RegisterMainCSDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/RegisterMainCSDetailsResponse" message="tns:ICallServerRegistration_RegisterMainCSDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetXMPPUsername">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetXMPPUsername" message="tns:ICallServerRegistration_GetXMPPUsername_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetXMPPUsernameResponse" message="tns:ICallServerRegistration_GetXMPPUsername_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCallServer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/DeleteCallServer" message="tns:ICallServerRegistration_DeleteCallServer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/DeleteCallServerResponse" message="tns:ICallServerRegistration_DeleteCallServer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallServerActivated">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/CallServerActivated" message="tns:ICallServerRegistration_CallServerActivated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/CallServerActivatedResponse" message="tns:ICallServerRegistration_CallServerActivated_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMainCSDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/UpdateMainCSDetails" message="tns:ICallServerRegistration_UpdateMainCSDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/UpdateMainCSDetailsResponse" message="tns:ICallServerRegistration_UpdateMainCSDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallServerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallServerList" message="tns:ICallServerRegistration_GetCallServerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallServerListResponse" message="tns:ICallServerRegistration_GetCallServerList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallServerTypesList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallServerTypesList" message="tns:ICallServerRegistration_GetCallServerTypesList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallServerTypesListResponse" message="tns:ICallServerRegistration_GetCallServerTypesList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZonesList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetZonesList" message="tns:ICallServerRegistration_GetZonesList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetZonesListResponse" message="tns:ICallServerRegistration_GetZonesList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCallServerChannels">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/SaveCallServerChannels" message="tns:ICallServerRegistration_SaveCallServerChannels_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/SaveCallServerChannelsResponse" message="tns:ICallServerRegistration_SaveCallServerChannels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallServerChannels">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallServerChannels" message="tns:ICallServerRegistration_GetCallServerChannels_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallServerChannelsResponse" message="tns:ICallServerRegistration_GetCallServerChannels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCallServerClipPaths">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/SaveCallServerClipPaths" message="tns:ICallServerRegistration_SaveCallServerClipPaths_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/SaveCallServerClipPathsResponse" message="tns:ICallServerRegistration_SaveCallServerClipPaths_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallServerClipPaths">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallServerClipPaths" message="tns:ICallServerRegistration_GetCallServerClipPaths_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallServerClipPathsResponse" message="tns:ICallServerRegistration_GetCallServerClipPaths_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDevices">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/SaveDevices" message="tns:ICallServerRegistration_SaveDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/SaveDevicesResponse" message="tns:ICallServerRegistration_SaveDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDevices">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetDevices" message="tns:ICallServerRegistration_GetDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetDevicesResponse" message="tns:ICallServerRegistration_GetDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveNetworkConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/SaveNetworkConfig" message="tns:ICallServerRegistration_SaveNetworkConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/SaveNetworkConfigResponse" message="tns:ICallServerRegistration_SaveNetworkConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNetworkConfig">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetNetworkConfig" message="tns:ICallServerRegistration_GetNetworkConfig_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetNetworkConfigResponse" message="tns:ICallServerRegistration_GetNetworkConfig_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditConcurrentVoicePortCounts">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/EditConcurrentVoicePortCounts" message="tns:ICallServerRegistration_EditConcurrentVoicePortCounts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/EditConcurrentVoicePortCountsResponse" message="tns:ICallServerRegistration_EditConcurrentVoicePortCounts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConcurrentVoicePortLimits">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetConcurrentVoicePortLimits" message="tns:ICallServerRegistration_GetConcurrentVoicePortLimits_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetConcurrentVoicePortLimitsResponse" message="tns:ICallServerRegistration_GetConcurrentVoicePortLimits_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCSConfiguration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/UpdateCSConfiguration" message="tns:ICallServerRegistration_UpdateCSConfiguration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/UpdateCSConfigurationResponse" message="tns:ICallServerRegistration_UpdateCSConfiguration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCSConfiguration">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCSConfiguration" message="tns:ICallServerRegistration_GetCSConfiguration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCSConfigurationResponse" message="tns:ICallServerRegistration_GetCSConfiguration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidCallserverIPs">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetValidCallserverIPs" message="tns:ICallServerRegistration_GetValidCallserverIPs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetValidCallserverIPsResponse" message="tns:ICallServerRegistration_GetValidCallserverIPs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallServerAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallServerAccount" message="tns:ICallServerRegistration_GetCallServerAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallServerAccountResponse" message="tns:ICallServerRegistration_GetCallServerAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCallControllerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallControllerList" message="tns:ICallServerRegistration_GetCallControllerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/GetCallControllerListResponse" message="tns:ICallServerRegistration_GetCallControllerList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCallControllerDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/UpdateCallControllerDetails" message="tns:ICallServerRegistration_UpdateCallControllerDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/UpdateCallControllerDetailsResponse" message="tns:ICallServerRegistration_UpdateCallControllerDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCallControllerDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICallServerRegistration/SaveCallControllerDetails" message="tns:ICallServerRegistration_SaveCallControllerDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICallServerRegistration/SaveCallControllerDetailsResponse" message="tns:ICallServerRegistration_SaveCallControllerDetails_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ITrunkRegistration">
+    <wsdl:operation name="DeleteTrunk">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/DeleteTrunk" message="tns:ITrunkRegistration_DeleteTrunk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/DeleteTrunkResponse" message="tns:ITrunkRegistration_DeleteTrunk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveInitialTrunkDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/SaveInitialTrunkDetails" message="tns:ITrunkRegistration_SaveInitialTrunkDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/SaveInitialTrunkDetailsResponse" message="tns:ITrunkRegistration_SaveInitialTrunkDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrunkByUniqueId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/UpdateTrunkByUniqueId" message="tns:ITrunkRegistration_UpdateTrunkByUniqueId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/UpdateTrunkByUniqueIdResponse" message="tns:ITrunkRegistration_UpdateTrunkByUniqueId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrunkList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/GetTrunkList" message="tns:ITrunkRegistration_GetTrunkList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/GetTrunkListResponse" message="tns:ITrunkRegistration_GetTrunkList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignServerToTrunk">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/AssignServerToTrunk" message="tns:ITrunkRegistration_AssignServerToTrunk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/AssignServerToTrunkResponse" message="tns:ITrunkRegistration_AssignServerToTrunk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerInfoForTrunk">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/GetServerInfoForTrunk" message="tns:ITrunkRegistration_GetServerInfoForTrunk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/GetServerInfoForTrunkResponse" message="tns:ITrunkRegistration_GetServerInfoForTrunk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerInfoForTrunkByUuid">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/GetServerInfoForTrunkByUuid" message="tns:ITrunkRegistration_GetServerInfoForTrunkByUuid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/GetServerInfoForTrunkByUuidResponse" message="tns:ITrunkRegistration_GetServerInfoForTrunkByUuid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePhoneNumbersForTrunk">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/SavePhoneNumbersForTrunk" message="tns:ITrunkRegistration_SavePhoneNumbersForTrunk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/SavePhoneNumbersForTrunkResponse" message="tns:ITrunkRegistration_SavePhoneNumbersForTrunk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumberListForTrunk">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/GetPhoneNumberListForTrunk" message="tns:ITrunkRegistration_GetPhoneNumberListForTrunk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/GetPhoneNumberListForTrunkResponse" message="tns:ITrunkRegistration_GetPhoneNumberListForTrunk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumbersForAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/GetPhoneNumbersForAccount" message="tns:ITrunkRegistration_GetPhoneNumbersForAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/GetPhoneNumbersForAccountResponse" message="tns:ITrunkRegistration_GetPhoneNumbersForAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTrunkFaxNumbers">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/GetMyTrunkFaxNumbers" message="tns:ITrunkRegistration_GetMyTrunkFaxNumbers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/GetMyTrunkFaxNumbersResponse" message="tns:ITrunkRegistration_GetMyTrunkFaxNumbers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTrunkPhoneNumbers">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/GetMyTrunkPhoneNumbers" message="tns:ITrunkRegistration_GetMyTrunkPhoneNumbers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/GetMyTrunkPhoneNumbersResponse" message="tns:ITrunkRegistration_GetMyTrunkPhoneNumbers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTrunkUnAuthPhoneNumbers">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/GetMyTrunkUnAuthPhoneNumbers" message="tns:ITrunkRegistration_GetMyTrunkUnAuthPhoneNumbers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/GetMyTrunkUnAuthPhoneNumbersResponse" message="tns:ITrunkRegistration_GetMyTrunkUnAuthPhoneNumbers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveInitialTrunkDetailsRegIn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/SaveInitialTrunkDetailsRegIn" message="tns:ITrunkRegistration_SaveInitialTrunkDetailsRegIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/SaveInitialTrunkDetailsRegInResponse" message="tns:ITrunkRegistration_SaveInitialTrunkDetailsRegIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeTrunkNumberUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/ChangeTrunkNumberUser" message="tns:ITrunkRegistration_ChangeTrunkNumberUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/ChangeTrunkNumberUserResponse" message="tns:ITrunkRegistration_ChangeTrunkNumberUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveTrunkNumberByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITrunkRegistration/SaveTrunkNumberByCode" message="tns:ITrunkRegistration_SaveTrunkNumberByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITrunkRegistration/SaveTrunkNumberByCodeResponse" message="tns:ITrunkRegistration_SaveTrunkNumberByCode_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IConference">
+    <wsdl:operation name="GetConferenceList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConference/GetConferenceList" message="tns:IConference_GetConferenceList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConference/GetConferenceListResponse" message="tns:IConference_GetConferenceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConferenceUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConference/GetConferenceUsers" message="tns:IConference_GetConferenceUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConference/GetConferenceUsersResponse" message="tns:IConference_GetConferenceUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateConference">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConference/AddOrUpdateConference" message="tns:IConference_AddOrUpdateConference_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConference/AddOrUpdateConferenceResponse" message="tns:IConference_AddOrUpdateConference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConferenceRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConference/DeleteConferenceRoom" message="tns:IConference_DeleteConferenceRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConference/DeleteConferenceRoomResponse" message="tns:IConference_DeleteConferenceRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateConferenceMember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConference/AddOrUpdateConferenceMember" message="tns:IConference_AddOrUpdateConferenceMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConference/AddOrUpdateConferenceMemberResponse" message="tns:IConference_AddOrUpdateConferenceMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConferenceMember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConference/DeleteConferenceMember" message="tns:IConference_DeleteConferenceMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConference/DeleteConferenceMemberResponse" message="tns:IConference_DeleteConferenceMember_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CSTrunkRegistrationEndpoint" type="tns:ITrunkRegistration">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteTrunk">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/DeleteTrunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInitialTrunkDetails">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/SaveInitialTrunkDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrunkByUniqueId">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/UpdateTrunkByUniqueId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrunkList">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/GetTrunkList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AssignServerToTrunk">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/AssignServerToTrunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerInfoForTrunk">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/GetServerInfoForTrunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerInfoForTrunkByUuid">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/GetServerInfoForTrunkByUuid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePhoneNumbersForTrunk">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/SavePhoneNumbersForTrunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumberListForTrunk">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/GetPhoneNumberListForTrunk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoneNumbersForAccount">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/GetPhoneNumbersForAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTrunkFaxNumbers">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/GetMyTrunkFaxNumbers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTrunkPhoneNumbers">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/GetMyTrunkPhoneNumbers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyTrunkUnAuthPhoneNumbers">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/GetMyTrunkUnAuthPhoneNumbers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveInitialTrunkDetailsRegIn">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/SaveInitialTrunkDetailsRegIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeTrunkNumberUser">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/ChangeTrunkNumberUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTrunkNumberByCode">
+      <soap:operation soapAction="http://tempuri.org/ITrunkRegistration/SaveTrunkNumberByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CSRegistrationEndpoint" type="tns:ICallServerRegistration">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegisterMainCSDetails">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/RegisterMainCSDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXMPPUsername">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetXMPPUsername" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCallServer">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/DeleteCallServer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CallServerActivated">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/CallServerActivated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMainCSDetails">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/UpdateMainCSDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallServerList">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetCallServerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallServerTypesList">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetCallServerTypesList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZonesList">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetZonesList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCallServerChannels">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/SaveCallServerChannels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallServerChannels">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetCallServerChannels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCallServerClipPaths">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/SaveCallServerClipPaths" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallServerClipPaths">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetCallServerClipPaths" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDevices">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/SaveDevices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDevices">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetDevices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveNetworkConfig">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/SaveNetworkConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNetworkConfig">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetNetworkConfig" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditConcurrentVoicePortCounts">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/EditConcurrentVoicePortCounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConcurrentVoicePortLimits">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetConcurrentVoicePortLimits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCSConfiguration">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/UpdateCSConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCSConfiguration">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetCSConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidCallserverIPs">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetValidCallserverIPs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallServerAccount">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetCallServerAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallControllerList">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/GetCallControllerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCallControllerDetails">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/UpdateCallControllerDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCallControllerDetails">
+      <soap:operation soapAction="http://tempuri.org/ICallServerRegistration/SaveCallControllerDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SIPRegistrationEndpoint" type="tns:ISIPRegistration">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ResetSIPPassword">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/ResetSIPPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SIPAccountCreation">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/SIPAccountCreation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSIPAccount">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/DeleteSIPAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSIPAccountDetails">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/getSIPAccountDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSIPDetailsForUserId">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/GetSIPDetailsForUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateExtensionUsage">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/ValidateExtensionUsage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateDomainUsage">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/ValidateDomainUsage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserExtension">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/UpdateUserExtension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDidForExtension">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/SetDidForExtension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDodForExtension">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/SetDodForExtension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserExtensions">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/GetUserExtensions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupDetails">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/GetGroupDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUserGroup">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/UpdateUserGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserGroup">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/DeleteUserGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUsersFromGroup">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/RemoveUsersFromGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCallForwarding">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/DeleteCallForwarding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCallForwardingInfo">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/SaveCallForwardingInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallForwardingInfo">
+      <soap:operation soapAction="http://tempuri.org/ISIPRegistration/GetCallForwardingInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CSOperationsEndpoint" type="tns:ICallServerOp">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteCallRoute">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/DeleteCallRoute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInbOutbRule">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/DeleteInbOutbRule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveToCallRuleOutbound">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/saveToCallRuleOutbound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveToCallRuleInbound">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/saveToCallRuleInbound" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallRuleOutboundList">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/GetCallRuleOutboundList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCallRuleInboundList">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/GetCallRuleInboundList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveCallRouteInfo">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/saveCallRouteInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCallRouteDetails">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/getCallRouteDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddInternalRule">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/AddInternalRule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddContext">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/AddContext" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCsInternalContexts">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/GetCsInternalContexts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTranslation">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/AddTranslation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTranslation">
+      <soap:operation soapAction="http://tempuri.org/ICallServerOp/GetTranslation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ConferenceEndpoint" type="tns:IConference">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetConferenceList">
+      <soap:operation soapAction="http://tempuri.org/IConference/GetConferenceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConferenceUsers">
+      <soap:operation soapAction="http://tempuri.org/IConference/GetConferenceUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateConference">
+      <soap:operation soapAction="http://tempuri.org/IConference/AddOrUpdateConference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConferenceRoom">
+      <soap:operation soapAction="http://tempuri.org/IConference/DeleteConferenceRoom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrUpdateConferenceMember">
+      <soap:operation soapAction="http://tempuri.org/IConference/AddOrUpdateConferenceMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConferenceMember">
+      <soap:operation soapAction="http://tempuri.org/IConference/DeleteConferenceMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DuoCSConfigService">
+    <wsdl:port name="CSTrunkRegistrationEndpoint" binding="tns:CSTrunkRegistrationEndpoint">
+      <soap:address location="http://dinusha-lap.duosl.duosoftware.com/DuoMainConfigService/DuoMainConfigService.svc/TrunkReg" />
+    </wsdl:port>
+    <wsdl:port name="CSRegistrationEndpoint" binding="tns:CSRegistrationEndpoint">
+      <soap:address location="http://dinusha-lap.duosl.duosoftware.com/DuoMainConfigService/DuoMainConfigService.svc/CSReg" />
+    </wsdl:port>
+    <wsdl:port name="SIPRegistrationEndpoint" binding="tns:SIPRegistrationEndpoint">
+      <soap:address location="http://dinusha-lap.duosl.duosoftware.com/DuoMainConfigService/DuoMainConfigService.svc/SIPReg" />
+    </wsdl:port>
+    <wsdl:port name="CSOperationsEndpoint" binding="tns:CSOperationsEndpoint">
+      <soap:address location="http://dinusha-lap.duosl.duosoftware.com/DuoMainConfigService/DuoMainConfigService.svc/CallRoute" />
+    </wsdl:port>
+    <wsdl:port name="ConferenceEndpoint" binding="tns:ConferenceEndpoint">
+      <soap:address location="http://dinusha-lap.duosl.duosoftware.com/DuoMainConfigService/DuoMainConfigService.svc/Conference" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dca496b8-12f3-4125-899e-21e783e25eb5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.51.61/duosltv5/commonservices/authorization/auth.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="auth.disco" MetadataType="Disco" ID="5a9af5b6-5db9-43f0-825a-dff7c38e3edf" SourceId="1" SourceUrl="http://192.168.51.61/DUOSLTV5/CommonServices/Authorization/auth.svc?disco" />
+    <MetadataFile FileName="auth.xsd" MetadataType="Schema" ID="f7da77c7-c91c-445a-b8e6-33ea5c7fa7f2" SourceId="1" SourceUrl="http://192.168.51.61/DUOSLTV5/CommonServices/Authorization/auth.svc?xsd=xsd2" />
+    <MetadataFile FileName="auth.wsdl" MetadataType="Wsdl" ID="e9a793de-513a-45f1-9eee-785dbd69bb37" SourceId="1" SourceUrl="http://192.168.51.61/DUOSLTV5/CommonServices/Authorization/auth.svc?wsdl" />
+    <MetadataFile FileName="auth1.xsd" MetadataType="Schema" ID="f3fbb45e-cf56-4d50-98ac-e3b7fb8b7a5b" SourceId="1" SourceUrl="http://192.168.51.61/DUOSLTV5/CommonServices/Authorization/auth.svc?xsd=xsd0" />
+    <MetadataFile FileName="auth2.xsd" MetadataType="Schema" ID="3aa8c678-2b95-4acd-a642-73e077060b69" SourceId="1" SourceUrl="http://192.168.51.61/DUOSLTV5/CommonServices/Authorization/auth.svc?xsd=xsd3" />
+    <MetadataFile FileName="auth3.xsd" MetadataType="Schema" ID="b5836da9-d501-43f5-8193-7f7e08d49075" SourceId="1" SourceUrl="http://192.168.51.61/DUOSLTV5/CommonServices/Authorization/auth.svc?xsd=xsd4" />
+    <MetadataFile FileName="auth4.xsd" MetadataType="Schema" ID="f65e704d-b869-4b07-8c97-d021ba224e6f" SourceId="1" SourceUrl="http://192.168.51.61/DUOSLTV5/CommonServices/Authorization/auth.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

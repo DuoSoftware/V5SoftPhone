@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="25752b69-f02c-4eec-9901-b1c578dc7354" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.194/DuoSubscribe5/V5Services/V5ProfileManagement/duosubscriberprofilemangement/ProfileManagementService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ProfileManagementService6.xsd" MetadataType="Schema" ID="70d4e9c3-9cff-4bcc-952a-9afd78df2680" SourceId="1" SourceUrl="http://192.168.1.194/DuoSubscribe5/V5Services/V5ProfileManagement/duosubscriberprofilemangement/ProfileManagementService.svc?xsd=xsd5" />
+    <MetadataFile FileName="ProfileManagementService61.xsd" MetadataType="Schema" ID="ce1f4689-5194-47b0-bee5-d300d1d1c555" SourceId="1" SourceUrl="http://192.168.1.194/DuoSubscribe5/V5Services/V5ProfileManagement/duosubscriberprofilemangement/ProfileManagementService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProfileManagementService62.xsd" MetadataType="Schema" ID="9e15a92e-71bd-4edd-87dc-ab32b64936f8" SourceId="1" SourceUrl="http://192.168.1.194/DuoSubscribe5/V5Services/V5ProfileManagement/duosubscriberprofilemangement/ProfileManagementService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProfileManagementService1.disco" MetadataType="Disco" ID="8f0b6fc5-650d-4650-ab41-8954bfd5a71a" SourceId="1" SourceUrl="http://192.168.1.194/DuoSubscribe5/V5Services/V5ProfileManagement/duosubscriberprofilemangement/ProfileManagementService.svc?disco" />
+    <MetadataFile FileName="ProfileManagementService63.xsd" MetadataType="Schema" ID="82fd830f-23a2-469b-bf46-e0b700d846f6" SourceId="1" SourceUrl="http://192.168.1.194/DuoSubscribe5/V5Services/V5ProfileManagement/duosubscriberprofilemangement/ProfileManagementService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ProfileManagementService1.wsdl" MetadataType="Wsdl" ID="80369685-815d-4422-bdd3-f895d357f511" SourceId="1" SourceUrl="http://192.168.1.194/DuoSubscribe5/V5Services/V5ProfileManagement/duosubscriberprofilemangement/ProfileManagementService.svc?wsdl" />
+    <MetadataFile FileName="ProfileManagementService64.xsd" MetadataType="Schema" ID="8655942f-5f75-4e45-a675-b14a8f02e609" SourceId="1" SourceUrl="http://192.168.1.194/DuoSubscribe5/V5Services/V5ProfileManagement/duosubscriberprofilemangement/ProfileManagementService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ProfileManagementService65.xsd" MetadataType="Schema" ID="acc0f59c-ebb6-49c1-b09e-297043d909ab" SourceId="1" SourceUrl="http://192.168.1.194/DuoSubscribe5/V5Services/V5ProfileManagement/duosubscriberprofilemangement/ProfileManagementService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DuoConfigServerDataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:simpleType name="Direction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="In" />
+      <xs:enumeration value="Out" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Direction" nillable="true" type="tns:Direction" />
+  <xs:complexType name="ArrayOfCallRuleInfoOutbound">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CallRuleInfoOutbound" nillable="true" type="tns:CallRuleInfoOutbound" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCallRuleInfoOutbound" nillable="true" type="tns:ArrayOfCallRuleInfoOutbound" />
+  <xs:complexType name="CallRuleInfoOutbound">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AniTranslationId" type="xs:int" />
+      <xs:element minOccurs="0" name="CType" type="tns:CallType" />
+      <xs:element minOccurs="0" name="DNIS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Priority" type="xs:int" />
+      <xs:element minOccurs="0" name="Schedule" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Timeout" type="xs:int" />
+      <xs:element minOccurs="0" name="TranslationId" type="xs:int" />
+      <xs:element minOccurs="0" name="TrunkID" type="xs:int" />
+      <xs:element minOccurs="0" name="TrunkNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="directDialPattern" type="tns:DirectDialPattern" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallRuleInfoOutbound" nillable="true" type="tns:CallRuleInfoOutbound" />
+  <xs:simpleType name="CallType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Incoming" />
+      <xs:enumeration value="Outgoing" />
+      <xs:enumeration value="Both" />
+      <xs:enumeration value="Fax" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CallType" nillable="true" type="tns:CallType" />
+  <xs:simpleType name="DirectDialPattern">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="StartWith" />
+      <xs:enumeration value="ExactMatch" />
+      <xs:enumeration value="Custom" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DirectDialPattern" nillable="true" type="tns:DirectDialPattern" />
+  <xs:complexType name="ArrayOfCallRuleInfoInbound">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CallRuleInfoInbound" nillable="true" type="tns:CallRuleInfoInbound" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCallRuleInfoInbound" nillable="true" type="tns:ArrayOfCallRuleInfoInbound" />
+  <xs:complexType name="CallRuleInfoInbound">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ANI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DNIS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Param" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Priority" type="xs:int" />
+      <xs:element minOccurs="0" name="RouteOpt" type="tns:Option" />
+      <xs:element minOccurs="0" name="Schedule" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TargetScript" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrunkID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallRuleInfoInbound" nillable="true" type="tns:CallRuleInfoInbound" />
+  <xs:simpleType name="Option">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="IVR" />
+      <xs:enumeration value="InboundDev">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Option" nillable="true" type="tns:Option" />
+  <xs:complexType name="ArrayOfCallRouteInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CallRouteInfo" nillable="true" type="tns:CallRouteInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCallRouteInfo" nillable="true" type="tns:ArrayOfCallRouteInfo" />
+  <xs:complexType name="CallRouteInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CallMaxInbound" type="xs:int" />
+      <xs:element minOccurs="0" name="CallMaxOutbound" type="xs:int" />
+      <xs:element minOccurs="0" name="CallMaxTotal" type="xs:int" />
+      <xs:element minOccurs="0" name="CallRouteGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FaxMaxInbound" type="xs:int" />
+      <xs:element minOccurs="0" name="FaxMaxOutbound" type="xs:int" />
+      <xs:element minOccurs="0" name="FaxMaxTotal" type="xs:int" />
+      <xs:element minOccurs="0" name="OperationalStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecordStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="RouteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RouteName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionID" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallRouteInfo" nillable="true" type="tns:CallRouteInfo" />
+  <xs:simpleType name="ContextCat">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Public" />
+      <xs:enumeration value="Internal" />
+      <xs:enumeration value="InternalPbx" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ContextCat" nillable="true" type="tns:ContextCat" />
+  <xs:complexType name="ArrayOfTranslationinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Translationinfo" nillable="true" type="tns:Translationinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTranslationinfo" nillable="true" type="tns:ArrayOfTranslationinfo" />
+  <xs:complexType name="Translationinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LAdd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LRemove" type="xs:int" />
+      <xs:element minOccurs="0" name="RAdd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RRemove" type="xs:int" />
+      <xs:element minOccurs="0" name="Replace" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReplaceDest" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReplaceOrig" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TranslationId" type="xs:int" />
+      <xs:element minOccurs="0" name="TranslationName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Translationinfo" nillable="true" type="tns:Translationinfo" />
+  <xs:complexType name="SIPAccDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="context" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="domain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="isActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SIPAccDetails" nillable="true" type="tns:SIPAccDetails" />
+  <xs:simpleType name="ExtType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IVR" />
+      <xs:enumeration value="User" />
+      <xs:enumeration value="Group" />
+      <xs:enumeration value="PSTN" />
+      <xs:enumeration value="ParkAsk" />
+      <xs:enumeration value="Conference" />
+      <xs:enumeration value="FIFO" />
+      <xs:enumeration value="Any" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ExtType" nillable="true" type="tns:ExtType" />
+  <xs:complexType name="ArrayOfUsrExtensions">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UsrExtensions" nillable="true" type="tns:UsrExtensions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsrExtensions" nillable="true" type="tns:ArrayOfUsrExtensions" />
+  <xs:complexType name="UsrExtensions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DidActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DidNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DodActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DodNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExtCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExtClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExtType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExtraData" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GuUserId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UsrExtensions" nillable="true" type="tns:UsrExtensions" />
+  <xs:complexType name="SaveResult">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Errors" nillable="true" type="q1:ArrayOfKeyValueOfstringanyType" />
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveResult" nillable="true" type="tns:SaveResult" />
+  <xs:complexType name="ArrayOfUserGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserGroup" nillable="true" type="tns:UserGroup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserGroup" nillable="true" type="tns:ArrayOfUserGroup" />
+  <xs:complexType name="UserGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GroupDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GroupExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Users" nillable="true" type="tns:ArrayOfUsrExtensions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserGroup" nillable="true" type="tns:UserGroup" />
+  <xs:complexType name="ArrayOfGroupInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GroupInfo" nillable="true" type="tns:GroupInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGroupInfo" nillable="true" type="tns:ArrayOfGroupInfo" />
+  <xs:complexType name="GroupInfo">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AddUsers" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GroupDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GroupExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GuUserId" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RemoveUsers" nillable="true" type="q3:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GroupInfo" nillable="true" type="tns:GroupInfo" />
+  <xs:complexType name="ArrayOfCallForwardingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CallForwardingInfo" nillable="true" type="tns:CallForwardingInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCallForwardingInfo" nillable="true" type="tns:ArrayOfCallForwardingInfo" />
+  <xs:complexType name="CallForwardingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdvancedList" nillable="true" type="tns:ArrayOfForwardingAdvanced" />
+      <xs:element minOccurs="0" name="Endpoint" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InitEndpoint" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Resource" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallForwardingInfo" nillable="true" type="tns:CallForwardingInfo" />
+  <xs:complexType name="ArrayOfForwardingAdvanced">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ForwardingAdvanced" nillable="true" type="tns:ForwardingAdvanced" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfForwardingAdvanced" nillable="true" type="tns:ArrayOfForwardingAdvanced" />
+  <xs:complexType name="ForwardingAdvanced">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionId" type="xs:int" />
+      <xs:element minOccurs="0" name="Endpoint" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoAnswerAction" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NoAnswerUOM" type="tns:UnitOfMeasure" />
+      <xs:element minOccurs="0" name="NoAnswerValue" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="OtherAction" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ForwardingAdvanced" nillable="true" type="tns:ForwardingAdvanced" />
+  <xs:simpleType name="UnitOfMeasure">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Seconds">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="UnitOfMeasure" nillable="true" type="tns:UnitOfMeasure" />
+  <xs:complexType name="CallServerList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AuditTrailRefID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CallServerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CallServerGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CallServerID" type="xs:int" />
+      <xs:element minOccurs="0" name="CallServerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CallServerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CallServerVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyID" type="xs:int" />
+      <xs:element minOccurs="0" name="OperationalStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecordStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="Tenant" type="xs:int" />
+      <xs:element minOccurs="0" name="TransactionID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="XmppClientName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallServerList" nillable="true" type="tns:CallServerList" />
+  <xs:complexType name="CallServerLoginData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CallServerID" type="xs:int" />
+      <xs:element minOccurs="0" name="XMPPUsername" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallServerLoginData" nillable="true" type="tns:CallServerLoginData" />
+  <xs:complexType name="ArrayOfCallServerList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CallServerList" nillable="true" type="tns:CallServerList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCallServerList" nillable="true" type="tns:ArrayOfCallServerList" />
+  <xs:complexType name="ArrayOfCallServerTypes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CallServerTypes" nillable="true" type="tns:CallServerTypes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCallServerTypes" nillable="true" type="tns:ArrayOfCallServerTypes" />
+  <xs:complexType name="CallServerTypes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CallServerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CallServerVersion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallServerTypes" nillable="true" type="tns:CallServerTypes" />
+  <xs:complexType name="ArrayOfZones">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Zones" nillable="true" type="tns:Zones" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfZones" nillable="true" type="tns:ArrayOfZones" />
+  <xs:complexType name="Zones">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SipServer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZoneDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZoneID" type="xs:int" />
+      <xs:element minOccurs="0" name="ZoneName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Zones" nillable="true" type="tns:Zones" />
+  <xs:complexType name="ArrayOfChannels">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Channels" nillable="true" type="tns:Channels" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChannels" nillable="true" type="tns:ArrayOfChannels" />
+  <xs:complexType name="Channels">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ChannelID" type="xs:int" />
+      <xs:element minOccurs="0" name="Direction" type="tns:Direction" />
+      <xs:element minOccurs="0" name="PipeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Protocol" type="tns:Protocol" />
+      <xs:element minOccurs="0" name="VoiceID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Channels" nillable="true" type="tns:Channels" />
+  <xs:simpleType name="Protocol">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="SIP" />
+      <xs:enumeration value="SS7" />
+      <xs:enumeration value="DM3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Protocol" nillable="true" type="tns:Protocol" />
+  <xs:simpleType name="DeviceConfigureStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Auto" />
+      <xs:enumeration value="Manual" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DeviceConfigureStatus" nillable="true" type="tns:DeviceConfigureStatus" />
+  <xs:complexType name="Devices">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConfigureStatus" type="tns:DeviceConfigureStatus" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Voice" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Devices" nillable="true" type="tns:Devices" />
+  <xs:complexType name="ArrayOfNetwork">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Network" nillable="true" type="tns:Network" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNetwork" nillable="true" type="tns:ArrayOfNetwork" />
+  <xs:complexType name="Network">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdapterName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IpAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaxCallConnect" type="xs:int" />
+      <xs:element minOccurs="0" name="MaxSipConnect" type="xs:int" />
+      <xs:element minOccurs="0" name="Port" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Network" nillable="true" type="tns:Network" />
+  <xs:complexType name="ConcurrentVoicePortLimits">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="confPorts" type="xs:int" />
+      <xs:element minOccurs="0" name="csID" type="xs:int" />
+      <xs:element minOccurs="0" name="csName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="faxPorts" type="xs:int" />
+      <xs:element minOccurs="0" name="incomingPorts" type="xs:int" />
+      <xs:element minOccurs="0" name="outgoingPorts" type="xs:int" />
+      <xs:element minOccurs="0" name="videoPorts" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConcurrentVoicePortLimits" nillable="true" type="tns:ConcurrentVoicePortLimits" />
+  <xs:complexType name="CallServerMainConfigurations">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyID" type="xs:int" />
+      <xs:element minOccurs="0" name="Tenant" type="xs:int" />
+      <xs:element minOccurs="0" name="VoxPath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="agentGreetingPath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="csID" type="xs:int" />
+      <xs:element minOccurs="0" name="csName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mainIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="recordPath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sipServer" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallServerMainConfigurations" nillable="true" type="tns:CallServerMainConfigurations" />
+  <xs:complexType name="CallServerAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyID" type="xs:int" />
+      <xs:element minOccurs="0" name="TenantID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallServerAccount" nillable="true" type="tns:CallServerAccount" />
+  <xs:complexType name="ArrayOfCallControllerConf">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CallControllerConf" nillable="true" type="tns:CallControllerConf" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCallControllerConf" nillable="true" type="tns:ArrayOfCallControllerConf" />
+  <xs:complexType name="CallControllerConf">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActiveStatus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CcCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CcId" type="xs:int" />
+      <xs:element minOccurs="0" name="CcName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CcObjGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClusterCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConcurrentCalls" type="xs:int" />
+      <xs:element minOccurs="0" name="Endpoint" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResourceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TcpPort" type="xs:int" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="XmppPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="XmppUsername" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CallControllerConf" nillable="true" type="tns:CallControllerConf" />
+  <xs:simpleType name="TrunkClass">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="SIP" />
+      <xs:enumeration value="SS7" />
+      <xs:enumeration value="PSTN" />
+      <xs:enumeration value="XMPP" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TrunkClass" nillable="true" type="tns:TrunkClass" />
+  <xs:simpleType name="TrunkType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Inbound" />
+      <xs:enumeration value="Outbound" />
+      <xs:enumeration value="Both" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TrunkType" nillable="true" type="tns:TrunkType" />
+  <xs:simpleType name="TrunkCategory">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Local" />
+      <xs:enumeration value="International" />
+      <xs:enumeration value="Both" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TrunkCategory" nillable="true" type="tns:TrunkCategory" />
+  <xs:simpleType name="RegistrationDirection">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="RegisterIn" />
+      <xs:enumeration value="RegisterOut" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RegistrationDirection" nillable="true" type="tns:RegistrationDirection" />
+  <xs:complexType name="TrunkDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AuditTrailRefID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyID" type="xs:int" />
+      <xs:element minOccurs="0" name="Operator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Profile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegDir" type="tns:RegistrationDirection" />
+      <xs:element minOccurs="0" name="Tenant" type="xs:int" />
+      <xs:element minOccurs="0" name="TrGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrunkCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrunkID" type="xs:int" />
+      <xs:element minOccurs="0" name="TrunkName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="defaultConfEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="domain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ipUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="noOfIncomingCalls" type="xs:int" />
+      <xs:element minOccurs="0" name="noOfOutgoingCalls" type="xs:int" />
+      <xs:element minOccurs="0" name="opStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="recStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="transactionID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="trunkCat" type="tns:TrunkCategory" />
+      <xs:element minOccurs="0" name="trunkClass" type="tns:TrunkClass" />
+      <xs:element minOccurs="0" name="trunkType" type="tns:TrunkType" />
+      <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrunkDetails" nillable="true" type="tns:TrunkDetails" />
+  <xs:complexType name="ArrayOfTrunkDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrunkDetails" nillable="true" type="tns:TrunkDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrunkDetails" nillable="true" type="tns:ArrayOfTrunkDetails" />
+  <xs:simpleType name="TrunkConnection">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Cloud" />
+      <xs:enumeration value="Private" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TrunkConnection" nillable="true" type="tns:TrunkConnection" />
+  <xs:complexType name="ServerInfoForTrunk">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Type" type="tns:TrunkConnection" />
+      <xs:element minOccurs="0" name="ZoneOrCSID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServerInfoForTrunk" nillable="true" type="tns:ServerInfoForTrunk" />
+  <xs:complexType name="ArrayOfTrunkPhoneNumbers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrunkPhoneNumbers" nillable="true" type="tns:TrunkPhoneNumbers" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrunkPhoneNumbers" nillable="true" type="tns:ArrayOfTrunkPhoneNumbers" />
+  <xs:complexType name="TrunkPhoneNumbers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CallType" type="tns:CallType" />
+      <xs:element minOccurs="0" name="NoOfConcCalls" type="xs:int" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScheduleId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrunkID" type="xs:int" />
+      <xs:element minOccurs="0" name="TrunkNumberUuid" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrunkPhoneNumbers" nillable="true" type="tns:TrunkPhoneNumbers" />
+  <xs:complexType name="AutoGeneratedAccDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DefaultConf" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IpUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Operator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrunkID" type="xs:int" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AutoGeneratedAccDetails" nillable="true" type="tns:AutoGeneratedAccDetails" />
+  <xs:complexType name="ArrayOfConferenceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConferenceInfo" nillable="true" type="tns:ConferenceInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConferenceInfo" nillable="true" type="tns:ArrayOfConferenceInfo" />
+  <xs:complexType name="ConferenceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AllowAnonymousUser" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element name="ConferenceNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConferenceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LockedStatus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MaxUsers" type="xs:int" />
+      <xs:element minOccurs="0" name="Pin" nillable="true" type="xs:string" />
+      <xs:element name="RoomName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TenantId" type="xs:int" />
+      <xs:element name="TrunkId" type="xs:int" />
+      <xs:element minOccurs="0" name="UUId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConferenceInfo" nillable="true" type="tns:ConferenceInfo" />
+  <xs:complexType name="ArrayOfConferenceUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConferenceUser" nillable="true" type="tns:ConferenceUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConferenceUser" nillable="true" type="tns:ArrayOfConferenceUser" />
+  <xs:complexType name="ConferenceUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element minOccurs="0" name="Crn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrentDeafFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CurrentModFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CurrentMuteFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Endpoint" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InitDeafFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="InitModFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="InitMuteFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsActiveTalker" type="xs:boolean" />
+      <xs:element minOccurs="0" name="JoinType" type="tns:ConferenceJoinType" />
+      <xs:element minOccurs="0" name="Protocol" type="tns:ConferenceEndpointProtocol" />
+      <xs:element minOccurs="0" name="RoomName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SessionId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" type="tns:ConferenceUserStatus" />
+      <xs:element minOccurs="0" name="TenantId" type="xs:int" />
+      <xs:element minOccurs="0" name="UserLevel" type="tns:ConferenceUserLevel" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserPin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Uuid" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConferenceUser" nillable="true" type="tns:ConferenceUser" />
+  <xs:simpleType name="ConferenceJoinType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="DialIn" />
+      <xs:enumeration value="DialOut" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ConferenceJoinType" nillable="true" type="tns:ConferenceJoinType" />
+  <xs:simpleType name="ConferenceEndpointProtocol">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="User" />
+      <xs:enumeration value="Phone" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ConferenceEndpointProtocol" nillable="true" type="tns:ConferenceEndpointProtocol" />
+  <xs:simpleType name="ConferenceUserStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">-1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Validated">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Added">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Disconnected">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Kicked">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tried">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ConferenceUserStatus" nillable="true" type="tns:ConferenceUserStatus" />
+  <xs:simpleType name="ConferenceUserLevel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Moderator" />
+      <xs:enumeration value="User" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ConferenceUserLevel" nillable="true" type="tns:ConferenceUserLevel" />
+</xs:schema>
