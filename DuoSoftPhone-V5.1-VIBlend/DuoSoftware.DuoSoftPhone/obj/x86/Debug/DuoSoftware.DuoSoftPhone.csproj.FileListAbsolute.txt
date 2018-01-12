@@ -22,3 +22,8 @@ E:\DuoProject\Applications\Duo Softphone\DuoSoftPhone-V5.1-VIBlend\DuoSoftware.D
 E:\DuoProject\Applications\Duo Softphone\DuoSoftPhone-V5.1-VIBlend\DuoSoftware.DuoSoftPhone\obj\x86\Debug\DuoSoftware.DuoSoftPhone.application
 E:\DuoProject\Applications\Duo Softphone\DuoSoftPhone-V5.1-VIBlend\DuoSoftware.DuoSoftPhone\obj\x86\Debug\DuoSoftware.DuoSoftPhone.exe
 E:\DuoProject\Applications\Duo Softphone\DuoSoftPhone-V5.1-VIBlend\DuoSoftware.DuoSoftPhone\obj\x86\Debug\DuoSoftware.DuoSoftPhone.pdb
+E:\DuoProject\Applications\V5SoftPhone\DuoSoftPhone-V5.1-VIBlend\DuoSoftware.DuoSoftPhone\bin\Debug\DuoSoftware.DuoSoftPhone.exe.config
+E:\DuoProject\Applications\V5SoftPhone\DuoSoftPhone-V5.1-VIBlend\DuoSoftware.DuoSoftPhone\obj\x86\Debug\Interop.TAPI3Lib.dll
+E:\DuoProject\Applications\V5SoftPhone\DuoSoftPhone-V5.1-VIBlend\DuoSoftware.DuoSoftPhone\obj\x86\Debug\DuoSoftware.DuoSoftPhone.csproj.ResolveComReference.cache
+E:\DuoProject\Applications\V5SoftPhone\DuoSoftPhone-V5.1-VIBlend\DuoSoftware.DuoSoftPhone\obj\x86\Debug\DuoSoftware.DuoSoftPhone.exe
+E:\DuoProject\Applications\V5SoftPhone\DuoSoftPhone-V5.1-VIBlend\DuoSoftware.DuoSoftPhone\obj\x86\Debug\DuoSoftware.DuoSoftPhone.pdb

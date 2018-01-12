@@ -30,56 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDialPad));
-            Infragistics.Win.Appearance appearance33 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance28 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance38 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance27 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance43 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance44 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance39 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance42 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance31 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance14 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance15 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance13 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance16 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance26 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance25 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance40 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance24 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance23 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance18 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance41 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance21 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance20 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance19 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance22 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance17 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance37 = new Infragistics.Win.Appearance();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            Infragistics.Win.Appearance appearance36 = new Infragistics.Win.Appearance();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            Infragistics.Win.Appearance appearance45 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance30 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance29 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance34 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance32 = new Infragistics.Win.Appearance();
             this.mynotifyicon = new System.Windows.Forms.NotifyIcon(this.components);
             this.volume = new System.Windows.Forms.ToolTip(this.components);
             this.phoner8ClickMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -110,8 +67,6 @@
             this.outboundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ivrListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ultraPopupControlPhone = new Infragistics.Win.Misc.UltraPopupControlContainer(this.components);
-            this.ultraPopupControlTools = new Infragistics.Win.Misc.UltraPopupControlContainer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.RightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -135,41 +90,9 @@
             this.ToolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.TopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainFormMenuStrip = new System.Windows.Forms.MenuStrip();
-            this.PanelPhone = new Infragistics.Win.Misc.UltraPanel();
-            this.OFFLINE = new Infragistics.Win.Misc.UltraButton();
-            this.gbBreakMode = new Infragistics.Win.Misc.UltraGroupBox();
-            this.btnBreakMode = new Infragistics.Win.Misc.UltraButton();
-            this.PanelPhoneNoBox = new Infragistics.Win.Misc.UltraPanel();
             this.txtStatus = new System.Windows.Forms.Label();
-            this.PanelDialPad = new Infragistics.Win.Misc.UltraPanel();
-            this.btnFreez = new Infragistics.Win.Misc.UltraButton();
-            this.buttonAnswer = new Infragistics.Win.Misc.UltraButton();
-            this.button_key_hash = new Infragistics.Win.Misc.UltraButton();
-            this.buttonReject = new Infragistics.Win.Misc.UltraButton();
             this.picSpek = new System.Windows.Forms.PictureBox();
-            this.button_key_5 = new Infragistics.Win.Misc.UltraButton();
             this.picMic = new System.Windows.Forms.PictureBox();
-            this.button_key_4 = new Infragistics.Win.Misc.UltraButton();
-            this.button_key_7 = new Infragistics.Win.Misc.UltraButton();
-            this.button_key_6 = new Infragistics.Win.Misc.UltraButton();
-            this.button_key_8 = new Infragistics.Win.Misc.UltraButton();
-            this.button_key_3 = new Infragistics.Win.Misc.UltraButton();
-            this.button_key_2 = new Infragistics.Win.Misc.UltraButton();
-            this.button_key_9 = new Infragistics.Win.Misc.UltraButton();
-            this.button_key_0 = new Infragistics.Win.Misc.UltraButton();
-            this.button_key_1 = new Infragistics.Win.Misc.UltraButton();
-            this.button_key_star = new Infragistics.Win.Misc.UltraButton();
-            this.PanelbtnLog = new Infragistics.Win.Misc.UltraPanel();
-            this.btnReregister = new Infragistics.Win.Misc.UltraButton();
-            this.buttonBackspace = new Infragistics.Win.Misc.UltraButton();
-            this.btnCallLogs = new Infragistics.Win.Misc.UltraButton();
-            this.PanelPhoneFunc = new Infragistics.Win.Misc.UltraPanel();
-            this.buttonHold = new Infragistics.Win.Misc.UltraButton();
-            this.buttonEtl = new Infragistics.Win.Misc.UltraButton();
-            this.buttonswapCall = new Infragistics.Win.Misc.UltraButton();
-            this.buttonConference = new Infragistics.Win.Misc.UltraButton();
-            this.buttontransferCall = new Infragistics.Win.Misc.UltraButton();
-            this.buttontransferIvr = new Infragistics.Win.Misc.UltraButton();
             this.PhoneStatusStrip = new System.Windows.Forms.StatusStrip();
             this.PhoneStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.PhoneStatusMsg = new System.Windows.Forms.ToolStripStatusLabel();
@@ -177,20 +100,15 @@
             this.Powered = new System.Windows.Forms.ToolStripStatusLabel();
             this.panelAgentList = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnLoadAgentList = new Infragistics.Win.Misc.UltraButton();
-            this.btnAgentListClose = new Infragistics.Win.Misc.UltraButton();
             this.GridAgentList = new System.Windows.Forms.DataGridView();
             this.AgentCode = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Extention = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PanelTools = new Infragistics.Win.Misc.UltraPanel();
             this.DuoBrowserTools = new System.Windows.Forms.WebBrowser();
             this.panelIvr = new System.Windows.Forms.Panel();
             this.GridIvrList = new System.Windows.Forms.DataGridView();
             this.IvrExtension = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IvrName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnLoadIvrList = new Infragistics.Win.Misc.UltraButton();
-            this.btnIvrListClose = new Infragistics.Win.Misc.UltraButton();
             this.btnIverTest = new System.Windows.Forms.Button();
             this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
@@ -299,41 +217,21 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelFavorites = new System.Windows.Forms.TableLayoutPanel();
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ultraPanel6 = new Infragistics.Win.Misc.UltraPanel();
             this.scrollingTextControl1 = new DuoSoftware.DuoSoftPhone.UI.ScrollingTextControl();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblAgentMode = new Infragistics.Win.Misc.UltraLabel();
             this.label4 = new System.Windows.Forms.Label();
-            this.toolStripStatusTools = new Infragistics.Win.Misc.UltraLabel();
             this.label3 = new System.Windows.Forms.Label();
-            this.toolStripStatusDuoPhone = new Infragistics.Win.Misc.UltraLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.phoner8ClickMenu.SuspendLayout();
             this.MainTabControlContextMenuStrip.SuspendLayout();
             this.MainFormMenuStrip.SuspendLayout();
-            this.PanelPhone.ClientArea.SuspendLayout();
-            this.PanelPhone.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gbBreakMode)).BeginInit();
-            this.gbBreakMode.SuspendLayout();
-            this.PanelPhoneNoBox.ClientArea.SuspendLayout();
-            this.PanelPhoneNoBox.SuspendLayout();
-            this.PanelDialPad.ClientArea.SuspendLayout();
-            this.PanelDialPad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSpek)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMic)).BeginInit();
-            this.PanelbtnLog.ClientArea.SuspendLayout();
-            this.PanelbtnLog.SuspendLayout();
-            this.PanelPhoneFunc.ClientArea.SuspendLayout();
-            this.PanelPhoneFunc.SuspendLayout();
             this.PhoneStatusStrip.SuspendLayout();
             this.panelAgentList.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridAgentList)).BeginInit();
-            this.PanelTools.ClientArea.SuspendLayout();
-            this.PanelTools.SuspendLayout();
             this.panelIvr.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridIvrList)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.adrBar.SuspendLayout();
             this.MainTabControl.SuspendLayout();
             this.TabPage1.SuspendLayout();
@@ -357,8 +255,6 @@
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanelFavorites.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
-            this.ultraPanel6.ClientArea.SuspendLayout();
-            this.ultraPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // mynotifyicon
@@ -679,20 +575,6 @@
             this.ivrListToolStripMenuItem.Text = "IVR";
             this.ivrListToolStripMenuItem.Click += new System.EventHandler(this.ivrListToolStripMenuItem_Click);
             // 
-            // ultraPopupControlPhone
-            // 
-            appearance33.BackColor = System.Drawing.Color.Black;
-            appearance33.BorderColor = System.Drawing.Color.Black;
-            this.ultraPopupControlPhone.DropDownResizeHandleAppearance = appearance33;
-            this.ultraPopupControlPhone.PreferredDropDownSize = new System.Drawing.Size(0, 0);
-            // 
-            // ultraPopupControlTools
-            // 
-            appearance28.BackColor = System.Drawing.Color.Black;
-            appearance28.BorderColor = System.Drawing.Color.Black;
-            this.ultraPopupControlTools.DropDownResizeHandleAppearance = appearance28;
-            this.ultraPopupControlTools.PreferredDropDownSize = new System.Drawing.Size(0, 0);
-            // 
             // toolTip1
             // 
             this.toolTip1.AutomaticDelay = 100;
@@ -864,108 +746,6 @@
             this.MainFormMenuStrip.Text = "MenuStrip1";
             this.MainFormMenuStrip.Visible = false;
             // 
-            // PanelPhone
-            // 
-            this.PanelPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            appearance38.AlphaLevel = ((short)(100));
-            appearance38.BorderAlpha = Infragistics.Win.Alpha.UseAlphaLevel;
-            appearance38.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            appearance38.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            appearance38.BorderColor3DBase = System.Drawing.Color.Yellow;
-            this.PanelPhone.Appearance = appearance38;
-            this.PanelPhone.BorderStyle = Infragistics.Win.UIElementBorderStyle.Etched;
-            // 
-            // PanelPhone.ClientArea
-            // 
-            this.PanelPhone.ClientArea.Controls.Add(this.OFFLINE);
-            this.PanelPhone.ClientArea.Controls.Add(this.gbBreakMode);
-            this.PanelPhone.ClientArea.Controls.Add(this.PanelPhoneNoBox);
-            this.PanelPhone.ClientArea.Controls.Add(this.PanelDialPad);
-            this.PanelPhone.ClientArea.Controls.Add(this.PanelbtnLog);
-            this.PanelPhone.ClientArea.Controls.Add(this.PanelPhoneFunc);
-            this.PanelPhone.ClientArea.Controls.Add(this.PhoneStatusStrip);
-            this.PanelPhone.ContextMenuStrip = this.phoner8ClickMenu;
-            this.PanelPhone.Location = new System.Drawing.Point(821, 142);
-            this.PanelPhone.Name = "PanelPhone";
-            this.PanelPhone.Size = new System.Drawing.Size(208, 333);
-            this.PanelPhone.TabIndex = 108;
-            this.PanelPhone.Visible = false;
-            // 
-            // OFFLINE
-            // 
-            appearance27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            appearance27.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            appearance27.FontData.BoldAsString = "True";
-            appearance27.ForeColor = System.Drawing.Color.DarkRed;
-            appearance27.TextHAlignAsString = "Center";
-            appearance27.TextVAlignAsString = "Middle";
-            this.OFFLINE.Appearance = appearance27;
-            this.OFFLINE.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button3D;
-            this.OFFLINE.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OFFLINE.Location = new System.Drawing.Point(2, 4);
-            this.OFFLINE.Name = "OFFLINE";
-            this.OFFLINE.Size = new System.Drawing.Size(200, 301);
-            this.OFFLINE.TabIndex = 86;
-            this.OFFLINE.Text = "Unable To Communicate with Servers. Please Contact Your System Administrator.";
-            this.OFFLINE.UseFlatMode = Infragistics.Win.DefaultableBoolean.False;
-            this.OFFLINE.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
-            this.OFFLINE.Click += new System.EventHandler(this.OFFLINE_Click);
-            // 
-            // gbBreakMode
-            // 
-            appearance43.BorderColor = System.Drawing.Color.Red;
-            appearance43.BorderColor2 = System.Drawing.Color.Maroon;
-            appearance43.BorderColor3DBase = System.Drawing.Color.Maroon;
-            this.gbBreakMode.Appearance = appearance43;
-            this.gbBreakMode.BorderStyle = Infragistics.Win.Misc.GroupBoxBorderStyle.RectangularDoubleSolid;
-            this.gbBreakMode.Controls.Add(this.btnBreakMode);
-            this.gbBreakMode.Location = new System.Drawing.Point(1, 30);
-            this.gbBreakMode.Name = "gbBreakMode";
-            this.gbBreakMode.Size = new System.Drawing.Size(202, 275);
-            this.gbBreakMode.TabIndex = 85;
-            this.gbBreakMode.Visible = false;
-            // 
-            // btnBreakMode
-            // 
-            appearance44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            appearance44.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            appearance44.BackColorAlpha = Infragistics.Win.Alpha.UseAlphaLevel;
-            appearance44.BackGradientStyle = Infragistics.Win.GradientStyle.BackwardDiagonal;
-            appearance44.BackHatchStyle = Infragistics.Win.BackHatchStyle.Percent90;
-            appearance44.BorderAlpha = Infragistics.Win.Alpha.Opaque;
-            appearance44.BorderColor = System.Drawing.Color.Red;
-            appearance44.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            appearance44.BorderColor3DBase = System.Drawing.Color.Maroon;
-            appearance44.FontData.BoldAsString = "True";
-            appearance44.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnBreakMode.Appearance = appearance44;
-            this.btnBreakMode.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBreakMode.Location = new System.Drawing.Point(7, 9);
-            this.btnBreakMode.Name = "btnBreakMode";
-            this.btnBreakMode.Size = new System.Drawing.Size(188, 257);
-            this.btnBreakMode.TabIndex = 65;
-            this.btnBreakMode.Text = "Break Mode";
-            this.btnBreakMode.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
-            this.btnBreakMode.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
-            this.btnBreakMode.Click += new System.EventHandler(this.btnBreakMode_Click);
-            // 
-            // PanelPhoneNoBox
-            // 
-            appearance39.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            appearance39.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            appearance39.BorderColor3DBase = System.Drawing.Color.Red;
-            this.PanelPhoneNoBox.Appearance = appearance39;
-            this.PanelPhoneNoBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.TwoColor;
-            // 
-            // PanelPhoneNoBox.ClientArea
-            // 
-            this.PanelPhoneNoBox.ClientArea.Controls.Add(this.txtStatus);
-            this.PanelPhoneNoBox.ContextMenuStrip = this.phoner8ClickMenu;
-            this.PanelPhoneNoBox.Location = new System.Drawing.Point(2, 4);
-            this.PanelPhoneNoBox.Name = "PanelPhoneNoBox";
-            this.PanelPhoneNoBox.Size = new System.Drawing.Size(200, 66);
-            this.PanelPhoneNoBox.TabIndex = 97;
-            // 
             // txtStatus
             // 
             this.txtStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -975,94 +755,6 @@
             this.txtStatus.Size = new System.Drawing.Size(194, 22);
             this.txtStatus.TabIndex = 98;
             this.txtStatus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // PanelDialPad
-            // 
-            appearance42.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            appearance42.BorderColor2 = System.Drawing.Color.Black;
-            appearance42.BorderColor3DBase = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.PanelDialPad.Appearance = appearance42;
-            this.PanelDialPad.BorderStyle = Infragistics.Win.UIElementBorderStyle.TwoColor;
-            // 
-            // PanelDialPad.ClientArea
-            // 
-            this.PanelDialPad.ClientArea.Controls.Add(this.btnFreez);
-            this.PanelDialPad.ClientArea.Controls.Add(this.buttonAnswer);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_hash);
-            this.PanelDialPad.ClientArea.Controls.Add(this.buttonReject);
-            this.PanelDialPad.ClientArea.Controls.Add(this.picSpek);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_5);
-            this.PanelDialPad.ClientArea.Controls.Add(this.picMic);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_4);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_7);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_6);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_8);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_3);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_2);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_9);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_0);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_1);
-            this.PanelDialPad.ClientArea.Controls.Add(this.button_key_star);
-            this.PanelDialPad.ContextMenuStrip = this.phoner8ClickMenu;
-            this.PanelDialPad.Location = new System.Drawing.Point(2, 73);
-            this.PanelDialPad.Name = "PanelDialPad";
-            this.PanelDialPad.Size = new System.Drawing.Size(200, 144);
-            this.PanelDialPad.TabIndex = 94;
-            // 
-            // btnFreez
-            // 
-            appearance31.FontData.BoldAsString = "True";
-            appearance31.ForeColor = System.Drawing.Color.Black;
-            this.btnFreez.Appearance = appearance31;
-            this.btnFreez.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFreez.Location = new System.Drawing.Point(1, 2);
-            this.btnFreez.Name = "btnFreez";
-            this.btnFreez.Size = new System.Drawing.Size(194, 33);
-            this.btnFreez.TabIndex = 100;
-            this.btnFreez.Text = "Freeze";
-            this.btnFreez.Visible = false;
-            this.btnFreez.Click += new System.EventHandler(this.btnFreez_Click);
-            // 
-            // buttonAnswer
-            // 
-            appearance3.Image = global::DuoSoftware.DuoSoftPhone.Properties.Resources.IncommingCallLog;
-            appearance3.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            appearance3.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance3.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            this.buttonAnswer.Appearance = appearance3;
-            this.buttonAnswer.ImageSize = new System.Drawing.Size(0, 0);
-            this.buttonAnswer.Location = new System.Drawing.Point(1, 2);
-            this.buttonAnswer.Name = "buttonAnswer";
-            this.buttonAnswer.Size = new System.Drawing.Size(64, 33);
-            this.buttonAnswer.TabIndex = 62;
-            this.buttonAnswer.Click += new System.EventHandler(this.buttonAnswer_Click);
-            // 
-            // button_key_hash
-            // 
-            appearance7.FontData.BoldAsString = "True";
-            appearance7.ForeColor = System.Drawing.Color.Black;
-            this.button_key_hash.Appearance = appearance7;
-            this.button_key_hash.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_hash.Location = new System.Drawing.Point(131, 113);
-            this.button_key_hash.Name = "button_key_hash";
-            this.button_key_hash.Size = new System.Drawing.Size(64, 25);
-            this.button_key_hash.TabIndex = 66;
-            this.button_key_hash.Text = "#";
-            this.button_key_hash.Click += new System.EventHandler(this.button_key_hash_Click);
-            // 
-            // buttonReject
-            // 
-            appearance4.Image = global::DuoSoftware.DuoSoftPhone.Properties.Resources.MakeCallLog;
-            appearance4.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Centered;
-            appearance4.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance4.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            this.buttonReject.Appearance = appearance4;
-            this.buttonReject.ImageSize = new System.Drawing.Size(0, 0);
-            this.buttonReject.Location = new System.Drawing.Point(131, 2);
-            this.buttonReject.Name = "buttonReject";
-            this.buttonReject.Size = new System.Drawing.Size(64, 33);
-            this.buttonReject.TabIndex = 63;
-            this.buttonReject.Click += new System.EventHandler(this.buttonReject_Click);
             // 
             // picSpek
             // 
@@ -1074,19 +766,6 @@
             this.picSpek.TabStop = false;
             this.picSpek.Visible = false;
             // 
-            // button_key_5
-            // 
-            appearance14.FontData.BoldAsString = "True";
-            appearance14.ForeColor = System.Drawing.Color.Black;
-            this.button_key_5.Appearance = appearance14;
-            this.button_key_5.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_5.Location = new System.Drawing.Point(66, 63);
-            this.button_key_5.Name = "button_key_5";
-            this.button_key_5.Size = new System.Drawing.Size(64, 25);
-            this.button_key_5.TabIndex = 73;
-            this.button_key_5.Text = "5";
-            this.button_key_5.Click += new System.EventHandler(this.button_key_5_Click);
-            // 
             // picMic
             // 
             this.picMic.Image = global::DuoSoftware.DuoSoftPhone.Properties.Resources.Mutemicrophone;
@@ -1096,299 +775,6 @@
             this.picMic.TabIndex = 45;
             this.picMic.TabStop = false;
             this.picMic.Visible = false;
-            // 
-            // button_key_4
-            // 
-            appearance15.FontData.BoldAsString = "True";
-            appearance15.ForeColor = System.Drawing.Color.Black;
-            this.button_key_4.Appearance = appearance15;
-            this.button_key_4.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_4.Location = new System.Drawing.Point(1, 63);
-            this.button_key_4.Name = "button_key_4";
-            this.button_key_4.Size = new System.Drawing.Size(64, 25);
-            this.button_key_4.TabIndex = 74;
-            this.button_key_4.Text = "4";
-            this.button_key_4.Click += new System.EventHandler(this.button_key_4_Click);
-            // 
-            // button_key_7
-            // 
-            appearance12.FontData.BoldAsString = "True";
-            appearance12.ForeColor = System.Drawing.Color.Black;
-            this.button_key_7.Appearance = appearance12;
-            this.button_key_7.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_7.Location = new System.Drawing.Point(1, 88);
-            this.button_key_7.Name = "button_key_7";
-            this.button_key_7.Size = new System.Drawing.Size(64, 25);
-            this.button_key_7.TabIndex = 71;
-            this.button_key_7.Text = "7";
-            this.button_key_7.Click += new System.EventHandler(this.button_key_7_Click);
-            // 
-            // button_key_6
-            // 
-            appearance13.FontData.BoldAsString = "True";
-            appearance13.ForeColor = System.Drawing.Color.Black;
-            this.button_key_6.Appearance = appearance13;
-            this.button_key_6.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_6.Location = new System.Drawing.Point(131, 63);
-            this.button_key_6.Name = "button_key_6";
-            this.button_key_6.Size = new System.Drawing.Size(64, 25);
-            this.button_key_6.TabIndex = 72;
-            this.button_key_6.Text = "6";
-            this.button_key_6.Click += new System.EventHandler(this.button_key_6_Click);
-            // 
-            // button_key_8
-            // 
-            appearance11.FontData.BoldAsString = "True";
-            appearance11.ForeColor = System.Drawing.Color.Black;
-            this.button_key_8.Appearance = appearance11;
-            this.button_key_8.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_8.Location = new System.Drawing.Point(66, 88);
-            this.button_key_8.Name = "button_key_8";
-            this.button_key_8.Size = new System.Drawing.Size(64, 25);
-            this.button_key_8.TabIndex = 70;
-            this.button_key_8.Text = "8";
-            this.button_key_8.Click += new System.EventHandler(this.button_key_8_Click);
-            // 
-            // button_key_3
-            // 
-            appearance16.FontData.BoldAsString = "True";
-            appearance16.ForeColor = System.Drawing.Color.Black;
-            this.button_key_3.Appearance = appearance16;
-            this.button_key_3.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_3.Location = new System.Drawing.Point(131, 38);
-            this.button_key_3.Name = "button_key_3";
-            this.button_key_3.Size = new System.Drawing.Size(64, 25);
-            this.button_key_3.TabIndex = 75;
-            this.button_key_3.Text = "3";
-            this.button_key_3.Click += new System.EventHandler(this.button_key_3_Click);
-            // 
-            // button_key_2
-            // 
-            appearance2.FontData.BoldAsString = "True";
-            appearance2.ForeColor = System.Drawing.Color.Black;
-            this.button_key_2.Appearance = appearance2;
-            this.button_key_2.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_2.Location = new System.Drawing.Point(66, 38);
-            this.button_key_2.Name = "button_key_2";
-            this.button_key_2.Size = new System.Drawing.Size(64, 25);
-            this.button_key_2.TabIndex = 76;
-            this.button_key_2.Text = "2";
-            this.button_key_2.Click += new System.EventHandler(this.button_key_2_Click);
-            // 
-            // button_key_9
-            // 
-            appearance26.FontData.BoldAsString = "True";
-            appearance26.ForeColor = System.Drawing.Color.Black;
-            this.button_key_9.Appearance = appearance26;
-            this.button_key_9.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_9.Location = new System.Drawing.Point(131, 88);
-            this.button_key_9.Name = "button_key_9";
-            this.button_key_9.Size = new System.Drawing.Size(64, 25);
-            this.button_key_9.TabIndex = 69;
-            this.button_key_9.Text = "9";
-            this.button_key_9.Click += new System.EventHandler(this.button_key_9_Click);
-            // 
-            // button_key_0
-            // 
-            appearance8.FontData.BoldAsString = "True";
-            appearance8.ForeColor = System.Drawing.Color.Black;
-            this.button_key_0.Appearance = appearance8;
-            this.button_key_0.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_0.Location = new System.Drawing.Point(66, 113);
-            this.button_key_0.Name = "button_key_0";
-            this.button_key_0.Size = new System.Drawing.Size(64, 25);
-            this.button_key_0.TabIndex = 67;
-            this.button_key_0.Text = "0";
-            this.button_key_0.Click += new System.EventHandler(this.button_key_0_Click);
-            // 
-            // button_key_1
-            // 
-            appearance25.FontData.BoldAsString = "True";
-            appearance25.ForeColor = System.Drawing.Color.Black;
-            this.button_key_1.Appearance = appearance25;
-            this.button_key_1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_1.Location = new System.Drawing.Point(1, 38);
-            this.button_key_1.Name = "button_key_1";
-            this.button_key_1.Size = new System.Drawing.Size(64, 25);
-            this.button_key_1.TabIndex = 64;
-            this.button_key_1.Text = "1";
-            this.button_key_1.Click += new System.EventHandler(this.button_key_1_Click);
-            // 
-            // button_key_star
-            // 
-            appearance9.FontData.BoldAsString = "True";
-            appearance9.ForeColor = System.Drawing.Color.Black;
-            this.button_key_star.Appearance = appearance9;
-            this.button_key_star.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_key_star.Location = new System.Drawing.Point(1, 113);
-            this.button_key_star.Name = "button_key_star";
-            this.button_key_star.Size = new System.Drawing.Size(64, 25);
-            this.button_key_star.TabIndex = 68;
-            this.button_key_star.Text = "*";
-            this.button_key_star.Click += new System.EventHandler(this.button_key_star_Click);
-            // 
-            // PanelbtnLog
-            // 
-            appearance40.BorderColor = System.Drawing.Color.Blue;
-            appearance40.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.PanelbtnLog.Appearance = appearance40;
-            this.PanelbtnLog.BorderStyle = Infragistics.Win.UIElementBorderStyle.TwoColor;
-            // 
-            // PanelbtnLog.ClientArea
-            // 
-            this.PanelbtnLog.ClientArea.Controls.Add(this.btnReregister);
-            this.PanelbtnLog.ClientArea.Controls.Add(this.buttonBackspace);
-            this.PanelbtnLog.ClientArea.Controls.Add(this.btnCallLogs);
-            this.PanelbtnLog.Location = new System.Drawing.Point(1, 276);
-            this.PanelbtnLog.Name = "PanelbtnLog";
-            this.PanelbtnLog.Size = new System.Drawing.Size(201, 29);
-            this.PanelbtnLog.TabIndex = 96;
-            // 
-            // btnReregister
-            // 
-            appearance24.FontData.BoldAsString = "True";
-            appearance24.ForeColor = System.Drawing.Color.Black;
-            appearance24.TextHAlignAsString = "Center";
-            appearance24.TextVAlignAsString = "Middle";
-            this.btnReregister.Appearance = appearance24;
-            this.btnReregister.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReregister.Location = new System.Drawing.Point(1, 0);
-            this.btnReregister.Name = "btnReregister";
-            this.btnReregister.Size = new System.Drawing.Size(64, 25);
-            this.btnReregister.TabIndex = 65;
-            this.btnReregister.Text = "Reregister";
-            this.btnReregister.Visible = false;
-            this.btnReregister.Click += new System.EventHandler(this.btnReregister_Click);
-            // 
-            // buttonBackspace
-            // 
-            appearance23.FontData.BoldAsString = "True";
-            appearance23.ForeColor = System.Drawing.Color.Black;
-            appearance23.TextHAlignAsString = "Center";
-            appearance23.TextVAlignAsString = "Middle";
-            this.buttonBackspace.Appearance = appearance23;
-            this.buttonBackspace.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBackspace.Location = new System.Drawing.Point(131, 0);
-            this.buttonBackspace.Name = "buttonBackspace";
-            this.buttonBackspace.Size = new System.Drawing.Size(64, 25);
-            this.buttonBackspace.TabIndex = 83;
-            this.buttonBackspace.Text = "<<";
-            this.buttonBackspace.Click += new System.EventHandler(this.buttonBackspace_Click);
-            // 
-            // btnCallLogs
-            // 
-            appearance18.FontData.BoldAsString = "True";
-            appearance18.ForeColor = System.Drawing.Color.Black;
-            appearance18.TextHAlignAsString = "Center";
-            appearance18.TextVAlignAsString = "Middle";
-            this.btnCallLogs.Appearance = appearance18;
-            this.btnCallLogs.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCallLogs.Location = new System.Drawing.Point(66, 0);
-            this.btnCallLogs.Name = "btnCallLogs";
-            this.btnCallLogs.Size = new System.Drawing.Size(64, 25);
-            this.btnCallLogs.TabIndex = 84;
-            this.btnCallLogs.Text = "Logs";
-            this.btnCallLogs.Click += new System.EventHandler(this.btnCallLogs_Click);
-            // 
-            // PanelPhoneFunc
-            // 
-            appearance41.BorderColor = System.Drawing.Color.Khaki;
-            appearance41.BorderColor2 = System.Drawing.Color.Black;
-            appearance41.BorderColor3DBase = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.PanelPhoneFunc.Appearance = appearance41;
-            this.PanelPhoneFunc.BorderStyle = Infragistics.Win.UIElementBorderStyle.TwoColor;
-            // 
-            // PanelPhoneFunc.ClientArea
-            // 
-            this.PanelPhoneFunc.ClientArea.Controls.Add(this.buttonHold);
-            this.PanelPhoneFunc.ClientArea.Controls.Add(this.buttonEtl);
-            this.PanelPhoneFunc.ClientArea.Controls.Add(this.buttonswapCall);
-            this.PanelPhoneFunc.ClientArea.Controls.Add(this.buttonConference);
-            this.PanelPhoneFunc.ClientArea.Controls.Add(this.buttontransferCall);
-            this.PanelPhoneFunc.ClientArea.Controls.Add(this.buttontransferIvr);
-            this.PanelPhoneFunc.ContextMenuStrip = this.phoner8ClickMenu;
-            this.PanelPhoneFunc.Location = new System.Drawing.Point(2, 219);
-            this.PanelPhoneFunc.Name = "PanelPhoneFunc";
-            this.PanelPhoneFunc.Size = new System.Drawing.Size(200, 56);
-            this.PanelPhoneFunc.TabIndex = 96;
-            // 
-            // buttonHold
-            // 
-            appearance6.FontData.BoldAsString = "True";
-            appearance6.ForeColor = System.Drawing.Color.Black;
-            this.buttonHold.Appearance = appearance6;
-            this.buttonHold.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHold.Location = new System.Drawing.Point(1, 2);
-            this.buttonHold.Name = "buttonHold";
-            this.buttonHold.Size = new System.Drawing.Size(64, 25);
-            this.buttonHold.TabIndex = 82;
-            this.buttonHold.Text = "Hold";
-            this.buttonHold.Click += new System.EventHandler(this.buttonHold_Click);
-            // 
-            // buttonEtl
-            // 
-            appearance21.FontData.BoldAsString = "True";
-            appearance21.ForeColor = System.Drawing.Color.Black;
-            this.buttonEtl.Appearance = appearance21;
-            this.buttonEtl.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEtl.Location = new System.Drawing.Point(66, 27);
-            this.buttonEtl.Name = "buttonEtl";
-            this.buttonEtl.Size = new System.Drawing.Size(64, 25);
-            this.buttonEtl.TabIndex = 79;
-            this.buttonEtl.Text = "ETL";
-            this.buttonEtl.Click += new System.EventHandler(this.buttonEtl_Click);
-            // 
-            // buttonswapCall
-            // 
-            appearance20.FontData.BoldAsString = "True";
-            appearance20.ForeColor = System.Drawing.Color.Black;
-            this.buttonswapCall.Appearance = appearance20;
-            this.buttonswapCall.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonswapCall.Location = new System.Drawing.Point(131, 27);
-            this.buttonswapCall.Name = "buttonswapCall";
-            this.buttonswapCall.Size = new System.Drawing.Size(64, 25);
-            this.buttonswapCall.TabIndex = 78;
-            this.buttonswapCall.Text = "Swap";
-            this.buttonswapCall.Click += new System.EventHandler(this.buttonswapCall_Click);
-            // 
-            // buttonConference
-            // 
-            appearance19.FontData.BoldAsString = "True";
-            appearance19.ForeColor = System.Drawing.Color.Black;
-            this.buttonConference.Appearance = appearance19;
-            this.buttonConference.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonConference.Location = new System.Drawing.Point(131, 2);
-            this.buttonConference.Name = "buttonConference";
-            this.buttonConference.Size = new System.Drawing.Size(64, 25);
-            this.buttonConference.TabIndex = 77;
-            this.buttonConference.Text = "Conf";
-            this.buttonConference.Click += new System.EventHandler(this.buttonConference_Click);
-            // 
-            // buttontransferCall
-            // 
-            appearance22.FontData.BoldAsString = "True";
-            appearance22.ForeColor = System.Drawing.Color.Black;
-            this.buttontransferCall.Appearance = appearance22;
-            this.buttontransferCall.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttontransferCall.Location = new System.Drawing.Point(66, 2);
-            this.buttontransferCall.Name = "buttontransferCall";
-            this.buttontransferCall.Size = new System.Drawing.Size(64, 25);
-            this.buttontransferCall.TabIndex = 80;
-            this.buttontransferCall.Text = "Tran";
-            this.buttontransferCall.Click += new System.EventHandler(this.buttontransferCall_Click);
-            // 
-            // buttontransferIvr
-            // 
-            appearance17.FontData.BoldAsString = "True";
-            appearance17.ForeColor = System.Drawing.Color.Black;
-            this.buttontransferIvr.Appearance = appearance17;
-            this.buttontransferIvr.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttontransferIvr.Location = new System.Drawing.Point(1, 27);
-            this.buttontransferIvr.Name = "buttontransferIvr";
-            this.buttontransferIvr.Size = new System.Drawing.Size(64, 25);
-            this.buttontransferIvr.TabIndex = 81;
-            this.buttontransferIvr.Text = "IVR";
-            this.buttontransferIvr.Click += new System.EventHandler(this.buttontransferIvr_Click);
             // 
             // PhoneStatusStrip
             // 
@@ -1461,44 +847,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnLoadAgentList);
-            this.groupBox1.Controls.Add(this.btnAgentListClose);
             this.groupBox1.Location = new System.Drawing.Point(1, -6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(202, 35);
             this.groupBox1.TabIndex = 102;
             this.groupBox1.TabStop = false;
-            // 
-            // btnLoadAgentList
-            // 
-            appearance5.FontData.BoldAsString = "True";
-            appearance5.ForeColor = System.Drawing.Color.Black;
-            this.btnLoadAgentList.Appearance = appearance5;
-            this.btnLoadAgentList.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button3D;
-            this.btnLoadAgentList.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoadAgentList.Location = new System.Drawing.Point(2, 9);
-            this.btnLoadAgentList.Name = "btnLoadAgentList";
-            this.btnLoadAgentList.Size = new System.Drawing.Size(173, 24);
-            this.btnLoadAgentList.TabIndex = 101;
-            this.btnLoadAgentList.Text = "Load";
-            this.btnLoadAgentList.Click += new System.EventHandler(this.btnLoadAgentList_Click);
-            // 
-            // btnAgentListClose
-            // 
-            appearance37.FontData.BoldAsString = "True";
-            appearance37.ForeColor = System.Drawing.Color.Black;
-            appearance37.Image = global::DuoSoftware.DuoSoftPhone.Properties.Resources.close_button_red_1412058367_123_231_20_248;
-            appearance37.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance37.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            this.btnAgentListClose.Appearance = appearance37;
-            this.btnAgentListClose.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button3D;
-            this.btnAgentListClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgentListClose.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgentListClose.Location = new System.Drawing.Point(175, 9);
-            this.btnAgentListClose.Name = "btnAgentListClose";
-            this.btnAgentListClose.Size = new System.Drawing.Size(24, 24);
-            this.btnAgentListClose.TabIndex = 105;
-            this.btnAgentListClose.Click += new System.EventHandler(this.btnAgentListClose_Click);
             // 
             // GridAgentList
             // 
@@ -1578,21 +931,6 @@
             this.Extention.Name = "Extention";
             this.Extention.ReadOnly = true;
             this.Extention.Visible = false;
-            // 
-            // PanelTools
-            // 
-            appearance36.BackColor = System.Drawing.Color.Black;
-            this.PanelTools.Appearance = appearance36;
-            this.PanelTools.BorderStyle = Infragistics.Win.UIElementBorderStyle.Rounded1Etched;
-            // 
-            // PanelTools.ClientArea
-            // 
-            this.PanelTools.ClientArea.Controls.Add(this.DuoBrowserTools);
-            this.PanelTools.Location = new System.Drawing.Point(291, 193);
-            this.PanelTools.Name = "PanelTools";
-            this.PanelTools.Size = new System.Drawing.Size(251, 225);
-            this.PanelTools.TabIndex = 110;
-            this.PanelTools.Visible = false;
             // 
             // DuoBrowserTools
             // 
@@ -1687,45 +1025,12 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnLoadIvrList);
-            this.groupBox2.Controls.Add(this.btnIvrListClose);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Location = new System.Drawing.Point(1, -6);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(202, 35);
             this.groupBox2.TabIndex = 103;
             this.groupBox2.TabStop = false;
-            // 
-            // btnLoadIvrList
-            // 
-            appearance45.FontData.BoldAsString = "True";
-            appearance45.ForeColor = System.Drawing.Color.Black;
-            this.btnLoadIvrList.Appearance = appearance45;
-            this.btnLoadIvrList.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button3D;
-            this.btnLoadIvrList.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoadIvrList.Location = new System.Drawing.Point(2, 9);
-            this.btnLoadIvrList.Name = "btnLoadIvrList";
-            this.btnLoadIvrList.Size = new System.Drawing.Size(172, 24);
-            this.btnLoadIvrList.TabIndex = 101;
-            this.btnLoadIvrList.Text = "Load";
-            this.btnLoadIvrList.Click += new System.EventHandler(this.btnLoadIvrList_Click);
-            // 
-            // btnIvrListClose
-            // 
-            appearance10.FontData.BoldAsString = "True";
-            appearance10.ForeColor = System.Drawing.Color.Black;
-            appearance10.Image = global::DuoSoftware.DuoSoftPhone.Properties.Resources.close_button_red_1412058367_123_231_20_248;
-            appearance10.ImageHAlign = Infragistics.Win.HAlign.Center;
-            appearance10.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            this.btnIvrListClose.Appearance = appearance10;
-            this.btnIvrListClose.ButtonStyle = Infragistics.Win.UIElementButtonStyle.Button3D;
-            this.btnIvrListClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIvrListClose.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIvrListClose.Location = new System.Drawing.Point(175, 9);
-            this.btnIvrListClose.Name = "btnIvrListClose";
-            this.btnIvrListClose.Size = new System.Drawing.Size(24, 24);
-            this.btnIvrListClose.TabIndex = 105;
-            this.btnIvrListClose.Click += new System.EventHandler(this.btnIvrListClose_Click);
             // 
             // btnIverTest
             // 
@@ -1812,7 +1117,7 @@
             // 
             this.newTabToolStripMenuItem.Name = "newTabToolStripMenuItem";
             this.newTabToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.newTabToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.newTabToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.newTabToolStripMenuItem.Text = "New Tab";
             this.newTabToolStripMenuItem.Click += new System.EventHandler(this.AddTabToolStripButton_Click);
             // 
@@ -1820,7 +1125,7 @@
             // 
             this.closeTabToolStripMenuItem.Name = "closeTabToolStripMenuItem";
             this.closeTabToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
-            this.closeTabToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.closeTabToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.closeTabToolStripMenuItem.Text = "Close Tab";
             this.closeTabToolStripMenuItem.Click += new System.EventHandler(this.RemoveTabToolStripButton_Click);
             // 
@@ -1828,66 +1133,66 @@
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Visible = false;
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(168, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(167, 6);
             // 
             // printOptionsToolStripMenuItem1
             // 
             this.printOptionsToolStripMenuItem1.Name = "printOptionsToolStripMenuItem1";
-            this.printOptionsToolStripMenuItem1.Size = new System.Drawing.Size(171, 22);
+            this.printOptionsToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.printOptionsToolStripMenuItem1.Text = "Print Options";
             this.printOptionsToolStripMenuItem1.Click += new System.EventHandler(this.PrintOptionsToolStripMenuItem_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(171, 22);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(170, 22);
             this.toolStripMenuItem9.Text = "Page Setup";
             this.toolStripMenuItem9.Click += new System.EventHandler(this.PageSetupToolStripMenuItem_Click);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(171, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(170, 22);
             this.toolStripMenuItem11.Text = "Print Preview";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.PrintPreviewToolStripMenuItem_Click);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(171, 22);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(170, 22);
             this.toolStripMenuItem10.Text = "Print";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.PrintToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(168, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(167, 6);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(171, 22);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(170, 22);
             this.toolStripMenuItem12.Text = "Properties";
             this.toolStripMenuItem12.Click += new System.EventHandler(this.PropertiesToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(171, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -2167,7 +1472,7 @@
             this.yahooMessengerToolStripMenuItem,
             this.calendarToolStripMenuItem});
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
-            this.toolToolStripMenuItem.Size = new System.Drawing.Size(48, 38);
+            this.toolToolStripMenuItem.Size = new System.Drawing.Size(47, 38);
             this.toolToolStripMenuItem.Text = "Tools";
             this.toolToolStripMenuItem.Visible = false;
             // 
@@ -2256,7 +1561,7 @@
             // 
             this.GoNewTabToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.GoNewTabToolStripMenuItem.Name = "GoNewTabToolStripMenuItem";
-            this.GoNewTabToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.GoNewTabToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.GoNewTabToolStripMenuItem.Text = "Go - New Tab";
             this.GoNewTabToolStripMenuItem.Click += new System.EventHandler(this.GoNewTabToolStripMenuItem_Click);
             // 
@@ -2517,7 +1822,6 @@
             this.frmLayoutPanel.ColumnCount = 1;
             this.frmLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.frmLayoutPanel.Controls.Add(this.frmLayoutsplitContainer, 0, 0);
-            this.frmLayoutPanel.Controls.Add(this.ultraPanel6, 0, 1);
             this.frmLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.frmLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.frmLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
@@ -2759,32 +2063,6 @@
             this.PictureBox2.TabIndex = 4;
             this.PictureBox2.TabStop = false;
             // 
-            // ultraPanel6
-            // 
-            appearance30.BackColor = System.Drawing.Color.Black;
-            appearance30.BorderColor = System.Drawing.Color.White;
-            appearance30.BorderColor2 = System.Drawing.Color.Silver;
-            appearance30.BorderColor3DBase = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ultraPanel6.Appearance = appearance30;
-            this.ultraPanel6.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
-            // 
-            // ultraPanel6.ClientArea
-            // 
-            this.ultraPanel6.ClientArea.Controls.Add(this.scrollingTextControl1);
-            this.ultraPanel6.ClientArea.Controls.Add(this.label1);
-            this.ultraPanel6.ClientArea.Controls.Add(this.lblAgentMode);
-            this.ultraPanel6.ClientArea.Controls.Add(this.label4);
-            this.ultraPanel6.ClientArea.Controls.Add(this.toolStripStatusTools);
-            this.ultraPanel6.ClientArea.Controls.Add(this.label3);
-            this.ultraPanel6.ClientArea.Controls.Add(this.toolStripStatusDuoPhone);
-            this.ultraPanel6.ClientArea.Controls.Add(this.label2);
-            this.ultraPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ultraPanel6.Location = new System.Drawing.Point(0, 488);
-            this.ultraPanel6.Margin = new System.Windows.Forms.Padding(0);
-            this.ultraPanel6.Name = "ultraPanel6";
-            this.ultraPanel6.Size = new System.Drawing.Size(1056, 29);
-            this.ultraPanel6.TabIndex = 103;
-            // 
             // scrollingTextControl1
             // 
             this.scrollingTextControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -2810,33 +2088,6 @@
             this.label1.Size = new System.Drawing.Size(3, 27);
             this.label1.TabIndex = 141;
             // 
-            // lblAgentMode
-            // 
-            appearance29.BackColor = System.Drawing.Color.Black;
-            appearance29.FontData.BoldAsString = "True";
-            appearance29.FontData.Name = "Calibri";
-            appearance29.ForeColor = System.Drawing.Color.White;
-            appearance29.Image = global::DuoSoftware.DuoSoftPhone.Properties.Resources.AgentOutboundMode;
-            appearance29.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Tiled;
-            appearance29.ImageHAlign = Infragistics.Win.HAlign.Left;
-            appearance29.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            appearance29.TextHAlignAsString = "Right";
-            appearance29.TextVAlignAsString = "Middle";
-            this.lblAgentMode.Appearance = appearance29;
-            this.lblAgentMode.AutoSize = true;
-            this.lblAgentMode.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Rounded4Thick;
-            this.lblAgentMode.BorderStyleOuter = Infragistics.Win.UIElementBorderStyle.Rounded4Thick;
-            this.lblAgentMode.ContextMenuStrip = this.phoner8ClickMenu;
-            this.lblAgentMode.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblAgentMode.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblAgentMode.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgentMode.ImageSize = new System.Drawing.Size(20, 20);
-            this.lblAgentMode.Location = new System.Drawing.Point(857, 0);
-            this.lblAgentMode.Name = "lblAgentMode";
-            this.lblAgentMode.Size = new System.Drawing.Size(32, 27);
-            this.lblAgentMode.TabIndex = 140;
-            this.lblAgentMode.MouseEnter += new System.EventHandler(this.lblAgentMode_MouseEnter);
-            // 
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Right;
@@ -2845,34 +2096,6 @@
             this.label4.Size = new System.Drawing.Size(3, 27);
             this.label4.TabIndex = 139;
             // 
-            // toolStripStatusTools
-            // 
-            appearance34.BackColor = System.Drawing.Color.Black;
-            appearance34.FontData.BoldAsString = "True";
-            appearance34.FontData.Name = "Calibri";
-            appearance34.ForeColor = System.Drawing.Color.Navy;
-            appearance34.Image = global::DuoSoftware.DuoSoftPhone.Properties.Resources.info;
-            appearance34.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Tiled;
-            appearance34.ImageHAlign = Infragistics.Win.HAlign.Left;
-            appearance34.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            appearance34.TextHAlignAsString = "Right";
-            appearance34.TextVAlignAsString = "Middle";
-            this.toolStripStatusTools.Appearance = appearance34;
-            this.toolStripStatusTools.AutoSize = true;
-            this.toolStripStatusTools.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Rounded4Thick;
-            this.toolStripStatusTools.BorderStyleOuter = Infragistics.Win.UIElementBorderStyle.Rounded4Thick;
-            this.toolStripStatusTools.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.toolStripStatusTools.Dock = System.Windows.Forms.DockStyle.Right;
-            this.toolStripStatusTools.Enabled = false;
-            this.toolStripStatusTools.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripStatusTools.ImageSize = new System.Drawing.Size(20, 20);
-            this.toolStripStatusTools.Location = new System.Drawing.Point(892, 0);
-            this.toolStripStatusTools.Name = "toolStripStatusTools";
-            this.toolStripStatusTools.Size = new System.Drawing.Size(74, 27);
-            this.toolStripStatusTools.TabIndex = 138;
-            this.toolStripStatusTools.Text = "Tools";
-            this.toolStripStatusTools.Click += new System.EventHandler(this.toolStripStatusTools_Click);
-            // 
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Right;
@@ -2880,34 +2103,6 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(3, 27);
             this.label3.TabIndex = 136;
-            // 
-            // toolStripStatusDuoPhone
-            // 
-            appearance32.BackColor = System.Drawing.Color.Black;
-            appearance32.FontData.BoldAsString = "True";
-            appearance32.FontData.Name = "Calibri";
-            appearance32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            appearance32.Image = global::DuoSoftware.DuoSoftPhone.Properties.Resources.PhonBottom;
-            appearance32.ImageBackgroundStyle = Infragistics.Win.ImageBackgroundStyle.Tiled;
-            appearance32.ImageHAlign = Infragistics.Win.HAlign.Left;
-            appearance32.ImageVAlign = Infragistics.Win.VAlign.Middle;
-            appearance32.TextHAlignAsString = "Right";
-            appearance32.TextVAlignAsString = "Middle";
-            this.toolStripStatusDuoPhone.Appearance = appearance32;
-            this.toolStripStatusDuoPhone.AutoSize = true;
-            this.toolStripStatusDuoPhone.BorderStyleInner = Infragistics.Win.UIElementBorderStyle.Rounded4Thick;
-            this.toolStripStatusDuoPhone.BorderStyleOuter = Infragistics.Win.UIElementBorderStyle.Rounded4Thick;
-            this.toolStripStatusDuoPhone.ContextMenuStrip = this.phoner8ClickMenu;
-            this.toolStripStatusDuoPhone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.toolStripStatusDuoPhone.Dock = System.Windows.Forms.DockStyle.Right;
-            this.toolStripStatusDuoPhone.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripStatusDuoPhone.ImageSize = new System.Drawing.Size(20, 20);
-            this.toolStripStatusDuoPhone.Location = new System.Drawing.Point(969, 0);
-            this.toolStripStatusDuoPhone.Name = "toolStripStatusDuoPhone";
-            this.toolStripStatusDuoPhone.Size = new System.Drawing.Size(81, 27);
-            this.toolStripStatusDuoPhone.TabIndex = 135;
-            this.toolStripStatusDuoPhone.Text = "Phone";
-            this.toolStripStatusDuoPhone.Click += new System.EventHandler(this.toolStripStatusDuoPhone_Click);
             // 
             // label2
             // 
@@ -2924,9 +2119,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1056, 517);
             this.ContextMenuStrip = this.phoner8ClickMenu;
-            this.Controls.Add(this.PanelPhone);
             this.Controls.Add(this.panelIvr);
-            this.Controls.Add(this.PanelTools);
             this.Controls.Add(this.panelAgentList);
             this.Controls.Add(this.MainFormMenuStrip);
             this.Controls.Add(this.frmLayoutPanel);
@@ -2947,30 +2140,14 @@
             this.MainTabControlContextMenuStrip.ResumeLayout(false);
             this.MainFormMenuStrip.ResumeLayout(false);
             this.MainFormMenuStrip.PerformLayout();
-            this.PanelPhone.ClientArea.ResumeLayout(false);
-            this.PanelPhone.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gbBreakMode)).EndInit();
-            this.gbBreakMode.ResumeLayout(false);
-            this.PanelPhoneNoBox.ClientArea.ResumeLayout(false);
-            this.PanelPhoneNoBox.ResumeLayout(false);
-            this.PanelDialPad.ClientArea.ResumeLayout(false);
-            this.PanelDialPad.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picSpek)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMic)).EndInit();
-            this.PanelbtnLog.ClientArea.ResumeLayout(false);
-            this.PanelbtnLog.ResumeLayout(false);
-            this.PanelPhoneFunc.ClientArea.ResumeLayout(false);
-            this.PanelPhoneFunc.ResumeLayout(false);
             this.PhoneStatusStrip.ResumeLayout(false);
             this.PhoneStatusStrip.PerformLayout();
             this.panelAgentList.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridAgentList)).EndInit();
-            this.PanelTools.ClientArea.ResumeLayout(false);
-            this.PanelTools.ResumeLayout(false);
             this.panelIvr.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridIvrList)).EndInit();
-            this.groupBox2.ResumeLayout(false);
             this.adrBar.ResumeLayout(false);
             this.adrBar.PerformLayout();
             this.MainTabControl.ResumeLayout(false);
@@ -2999,9 +2176,6 @@
             this.tableLayoutPanelFavorites.ResumeLayout(false);
             this.tableLayoutPanelFavorites.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
-            this.ultraPanel6.ClientArea.ResumeLayout(false);
-            this.ultraPanel6.ClientArea.PerformLayout();
-            this.ultraPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

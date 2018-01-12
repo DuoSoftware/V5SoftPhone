@@ -387,10 +387,14 @@ namespace DuoSoftware.DuoSoftPhone.UI
         {
             try
             {
-                logger.LogMessage(Logger.LogAppender.DuoDefault, "Start to play ring tone",Logger.LogLevel.Info);
-                if (_playRingtone)
-                    _wavPlayer.PlayLooping();
-                logger.LogMessage(Logger.LogAppender.DuoDefault, "PlayRingTone > End", Logger.LogLevel.Info);
+                if (_call.CallCurrentState.GetType() == typeof(CallIncommingState) || _call.CallCurrentState.GetType() == typeof(CallRingingState) || _call.CallCurrentState.GetType() == typeof(CallTryingState))
+                {
+                    logger.LogMessage(Logger.LogAppender.DuoDefault, "Start to play ring tone", Logger.LogLevel.Info);
+                    if (_playRingtone)
+                        _wavPlayer.PlayLooping();
+                    logger.LogMessage(Logger.LogAppender.DuoDefault, "PlayRingTone > End", Logger.LogLevel.Info);
+                }
+                
             }
             catch (Exception exception)
             {

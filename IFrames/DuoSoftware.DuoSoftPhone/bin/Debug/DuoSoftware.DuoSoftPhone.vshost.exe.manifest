@@ -4,7 +4,7 @@
   <description asmv2:iconFile="Console App.fw.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="DuoSoftware.DuoSoftPhone" version="5.1.5.8" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="DuoSoftware.DuoSoftPhone" version="5.1.5.9" language="neutral" processorArchitecture="x86" />
     <commandLine file="DuoSoftware.DuoSoftPhone.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DuoCallTesterLicenseKey.dll" size="6656">
-      <assemblyIdentity name="DuoCallTesterLicenseKey" version="5.1.5.8" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DuoCallTesterLicenseKey.dll" size="5632">
+      <assemblyIdentity name="DuoCallTesterLicenseKey" version="5.1.5.9" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WByz2+SRjxnA8aeHwFJuB7lyH4ve8dzHnK+NgiZotZk=</dsig:DigestValue>
+        <dsig:DigestValue>y8ALy42kSvPhddgUVk/TcmcE4ln+Tu0WytmRnf8oGhk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DuoSoftware.DuoSoftPhone.exe" size="2653696">
-      <assemblyIdentity name="DuoSoftware.DuoSoftPhone" version="5.1.5.8" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DuoSoftware.DuoSoftPhone.exe" size="2640384">
+      <assemblyIdentity name="DuoSoftware.DuoSoftPhone" version="5.1.5.9" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YC5VfDhrKFgvj/AOApwYXa1GMfy6vqUjpNO9sMMyT1U=</dsig:DigestValue>
+        <dsig:DigestValue>x9oHdMvgEEFdzkwvCxsXJYAekQBftS9SGBpcryNtYnY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
